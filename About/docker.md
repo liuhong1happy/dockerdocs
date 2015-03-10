@@ -7,6 +7,7 @@
   `Docker`是一个开发者和系统管理员用来开发部署运行APP的平台。`Docker`让你迅速通过各个组件编译APP，并能消除部署代码带来的冲突。`Docker`能让你测试你的代码并迅速运行到生产环境。
   
   `Docker`包括：
+  
     1. **Docker Engine**：轻量级强大的开源container虚拟技术，能创建并容纳你的app的work flow。
     2. **Docker Hub**：一种分享和管理APP栈的SaaS服务。
 ## 为什么选择Docker？
