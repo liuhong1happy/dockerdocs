@@ -4,20 +4,16 @@
 ##关于Docker
 
 #### --能在任何环境开发部署运行任何APP
-  `Docker`是一个开发者和系统管理员用来开发部署运行APP的平台。Docker让你迅速通过各个组件编译APP，并能消除部署代码带来的冲突。Docker能让你测试你的代码并迅速运行到生产环境。
-  
+  `Docker`是一个开发者和系统管理员用来开发部署运行APP的平台。`Docker`让你迅速通过各个组件编译APP，并能消除部署代码带来的冲突。`Docker`能让你测试你的代码并迅速运行到生产环境。
   `Docker`包括：
-  
-    **Docker Engine**：轻量级强大的开源container虚拟技术，能创建并容纳你的app的work flow。
-    
-    **Docker Hub**：一种分享和管理APP栈的SaaS服务。
-    
+    + **Docker Engine**：轻量级强大的开源container虚拟技术，能创建并容纳你的app的work flow。
+    + **Docker Hub**：一种分享和管理APP栈的SaaS服务。
 ## 为什么选择Docker？
 
 #### --迅速交互你的应用
-  1、我们想让你的环境更加运行的更好。Docker container和work flow能帮助开发者，系统管理员，测试，发布工程师，得到你的代码过后部署到生产环境并让其很好的运行。我们创建一个标准container format，让开发者关心他们在container里的APP，当系统管理员和操作员致力于在你部署的环境下的container能正常运行。分离的工作流水线，简单管理，部署代码。
-  2、我们让创建新的container，复制的APP正常使用，增加差异的可见性，变的容易。
-  3、Docker container是轻量级和快速的。Container有次级部署周期，能减少循环开发，测试和部署。
+  1. 我们想让你的环境更加运行的更好。Docker container和work flow能帮助开发者，系统管理员，测试，发布工程师，得到你的代码过后部署到生产环境并让其很好的运行。我们创建一个标准container format，让开发者关心他们在container里的APP，当系统管理员和操作员致力于在你部署的环境下的container能正常运行。分离的工作流水线，简单管理，部署代码。
+  2. 我们让创建新的container，复制的APP正常使用，增加差异的可见性，变的容易。
+  3. Docker container是轻量级和快速的。Container有次级部署周期，能减少循环开发，测试和部署。
 
 #### --容易部署和监测
   1、Docker container几乎运行在任何地方。你可以部署container在桌面设备、物理服务器 、虚拟服务器（VM）、数据中心，包括公有云私有云环境。
