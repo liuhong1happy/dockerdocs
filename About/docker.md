@@ -8,8 +8,8 @@
   
   `Docker`包括：
   
-    1. **Docker Engine**：轻量级强大的开源container虚拟技术，能创建并容纳你的app的work flow。
-    2. **Docker Hub**：一种分享和管理APP栈的SaaS服务。
+    1. `Docker Engine`：轻量级强大的开源container虚拟技术，能创建并容纳你的app的work flow。
+    2. `Docker Hub`：一种分享和管理APP栈的SaaS服务。
 ## 为什么选择Docker？
 
 #### --迅速交互你的应用
