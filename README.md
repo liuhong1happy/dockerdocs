@@ -7,7 +7,7 @@ docker官方文档中文翻译
 ## 联系我们
 QQ群号 181774264<br/>
 微信公众号 Dockerlover<br/>
-百度贴吧 docker<br/>
+百度贴吧 [docker](http://tieba.baidu.com/f?kw=docker)<br/>
 
 
 
