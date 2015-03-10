@@ -1,13 +1,12 @@
 #关于Docker 
 [返回目录](../SUMMARY.md) [上一篇](REDEME.md) [下一篇](release-notes.md)
-*****
 ##关于Docker
 ***
 #### --能在任何环境开发部署运行任何APP
-  `Docker`是一个开发者和系统管理员用来开发部署运行APP的平台。`Docker`让你迅速通过各个组件编译APP，并能消除部署代码带来的冲突。`Docker`能让你测试你的代码并迅速运行到生产环境。</br>
-  `Docker`包括：</br>
-    1. Docker Engine：轻量级强大的开源container虚拟技术，能创建并容纳你的app的work flow。</br>
-    2. Docker Hub：一种分享和管理APP栈的SaaS服务。</br>
+  `Docker`是一个开发者和系统管理员用来开发部署运行APP的平台。`Docker`让你迅速通过各个组件编译APP，并能消除部署代码带来的冲突。`Docker`能让你测试你的代码并迅速运行到生产环境。<br/>
+  `Docker`包括：<br/>
+    1. Docker Engine：轻量级强大的开源container虚拟技术，能创建并容纳你的app的work flow。<br/>
+    2. Docker Hub：一种分享和管理APP栈的SaaS服务。<br/>
 ## 为什么选择Docker？
 ***
 #### --迅速交互你的应用
