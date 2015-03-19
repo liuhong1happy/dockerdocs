@@ -1,8 +1,8 @@
-关于Docker的安全方面，主要有以下这几个方面值得我们考虑：<br>
-* 内核固有的的安全性及对namespace和cgroups的支持方面<br>
-* docker守护进程自身的安全问题<br>
-* 无论是默认情况还是用户定制的情况下，docker容器的配置文件存在漏洞<br>
-* 内核“硬化“的安全特性以及他们与容器间交互的方式存在问题<br>
+关于Docker的安全方面，主要有以下这几个方面值得我们考虑：<br/>
+* 内核固有的的安全性及对namespace和cgroups的支持方面<br/>
+* docker守护进程自身的安全问题<br/>
+* 无论是默认情况还是用户定制的情况下，docker容器的配置文件存在漏洞<br/>
+* 内核“硬化“的安全特性以及他们与容器间交互的方式存在问题<br/>
 ## Kernel Namespaces
     docker容器和LXC容器很相似，它们都有类似的安全特性。当你用 docker run命令运行一个容器时，docker就会创建一系列的namespace和control groups。
     namespace提供了一种最为直接和简单的隔离方式：运行在容器中的进程并不会发现有什么区别，受到的影响也几乎较小
