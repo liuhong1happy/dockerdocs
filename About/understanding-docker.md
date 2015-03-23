@@ -119,9 +119,9 @@ Docker Hub 提供公共的和私有的仓库来存储镜像，公共镜像可以
 ### 当你运行一个容器时会发生什么？
 
 无论是使用docker二进制还是通过API，Docker客户端都会告诉Docker守护进程来运行一个容器。
->
-> $ sudo docker run -i -t ubuntu /bin/bash
->
+
+    $ sudo docker run -i -t ubuntu /bin/bash
+
 
 我们来仔细看这条命令，docker开启Docker客户端，run 告诉Docker客户端执行一个新的容器，要启动一个容器，docker客户端至少要告诉守护进程以下几点：
 
