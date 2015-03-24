@@ -24,8 +24,8 @@ QQ群号 181774264 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey
 
 如果你是对docker一无所知的朋友，我们建议你对本GitBook项目的阅读顺序如下：
 
-*[关于Docker](About/docker.md)
-*[安装Docker](Installation/ubuntu.md)
+[关于Docker](About/docker.md)
+[安装Docker](Installation/ubuntu.md)
 
 
 
