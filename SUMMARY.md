@@ -7,4 +7,7 @@
     * [版本说明](About/release-notes.md)
     * [了解Docker](About/understanding-docker.md)
 * [安装](Installation/README.md)
-    * [Ubuntu](Installation/ubuntulinux.md)
+    * [Ubuntu](Installation/ubuntu.md)
+    * [Compose](Installation/compose.md)
+* [用户指南](userguide/README.md)
+    * [欢迎阅读Docker用户指南](userguide/userguide.md)
