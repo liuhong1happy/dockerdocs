@@ -1,6 +1,6 @@
 ##准备安装Compose
 
-为了安装Compose，你将需要安装docker先。然后安装Compose，通过一个curl命令。
+为了安装Compose，你需要先安装docker，然后通过一个curl命令安装Compose。
 
 ##安装docker
 
