@@ -1,4 +1,4 @@
-# 了解Container
+# 了解Docker容器
 
 在Docker用户指南的上一节中，我们运行了自己的第一个container。我们将继续使用docker run命令，运行第二个container。
 
