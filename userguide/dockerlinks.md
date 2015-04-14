@@ -69,7 +69,7 @@
 
 你也可以看到docker inspect返回了一个container的名字。
 
-    说明：container名字不得不是唯一的。那就意味着，你仅仅只能叫一个container为“web”。如果你想重新使用container名称，你必须删除旧的container（通过使用docker rm）在你创建一个新的container并命名相同名称的时候。作为其他方案，你可以使用--rm标志，在docker run命令中。这将删除container并稍后停止它。
+> 说明：container名字不得不是唯一的。那就意味着，你仅仅只能叫一个container为“web”。如果你想重新使用container名称，你必须删除旧的container（通过使用docker rm）在你创建一个新的container并命名相同名称的时候。作为其他方案，你可以使用--rm标志，在docker run命令中。这将删除container并稍后停止它。
 
 #### Container链接
 
