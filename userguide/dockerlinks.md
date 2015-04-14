@@ -8,7 +8,7 @@
 
     $ sudo docker run -d -P training/webapp python app.py
 
-    说明：container有一个互联网络和IP地址（我们使用docker inspect命令可以显示出contaienr的IP地址）。Docker 可以有一个简介的网络配置。你可以看到更多有关Docker网络的信息，请点击”这里“。
+> 说明：container有一个互联网络和IP地址（我们使用docker inspect命令可以显示出contaienr的IP地址）。Docker 可以有一个简介的网络配置。你可以看到更多有关Docker网络的信息，请点击”这里“。
 
 当container被创建，-P标志被使用来自动关联映射本身应用端口到主机的任意网络端口（从49153-65535）。
 
@@ -43,7 +43,7 @@
 5000 127.0.0.1:49155
 
  
-说明：-p标志可以被使用多次来配置更多的端口。
+> 说明：-p标志可以被使用多次来配置更多的端口。
 
 ## Docker容器链接
 
@@ -146,7 +146,7 @@ Docker 暴露链接源contaienr的信息到recipient container有两种方式。
     DB_PORT_5432_TCP_ADDR=172.17.0.5
     ...
 
-    说明：这些环境变量仅仅第一过程就被设置在container中。显示的，某些守护进程（例如sshd）将擦除它们，当引起链接的shell时。
+> 说明：这些环境变量仅仅第一过程就被设置在container中。显示的，某些守护进程（例如sshd）将擦除它们，当引起链接的shell时。
 
 你可以看到Docker已经创建一系列带有源db container有用信息的环境变量。每个环境变量都有前缀DB_，将来自你指定alias的。如果alias是db1，环境变量将会前缀DB1_。你可以使用这些环境变量配置你的应用来链接在dbcontainer上的数据库。链接将是安全的私有的。仅仅webcontainer将可以和dbcontainer对话。
 
@@ -171,11 +171,11 @@ Docker 暴露链接源contaienr的信息到recipient container有两种方式。
     56 bytes from172.17.0.5: icmp_seq=1 ttl=64 time=0.250 ms
     56 bytes from172.17.0.5: icmp_seq=2 ttl=64 time=0.256 ms
 
-    说明：在这个例子中，你将注解你不得不安装ping，因为它不被包含在container中。
+> 说明：在这个例子中，你将注解你不得不安装ping，因为它不被包含在container中。
 
 这里，你使用ping命令来ping通db container。命令将会解析172.17.0.5。你可以使用这些主机入口来配置使用db container的应用。
 
-    说明：你可以链接多个recipient containers 到一个源。例如，你可以有多个web container（不同命名）使用你的db container。
+> 说明：你可以链接多个recipient containers 到一个源。例如，你可以有多个web container（不同命名）使用你的db container。
 
 如果你重启源container，被链接的container的/etc/hosts将自动更新源contaienr的IP 地址，允许被链接的通讯继续。
 
