@@ -1,3 +1,5 @@
+# Docker Swarm用户指南
+
 Docker Swarm是一个本地docker集群。它将一个Docker host池放进一个单个虚拟host中管理。
 
 Swarm服务（API标准Docker API），正如某系工具（已经和Docker Deamon可以联系的）可以使用Swarm透明扩展到多个主机：dokku，Compose，Krane，Flynn，Deis，dockerui，shipyard，Drone，Jenkins…并且，当然，DOCKER client本身。
