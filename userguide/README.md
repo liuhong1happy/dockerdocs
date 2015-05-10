@@ -10,7 +10,7 @@
 * [了解Docker容器](dockercontainers.md)
 * [了解Docker镜像](dockerimages.md)
 * [了解Docker容器链接](dockerlinks.md)
-* [管理Docker容器数据卷](dockervolumes.md)
+* [管理容器中数据](dockervolumes.md)
 * [了解Docker Hub](dockerrepos.md)
 * [Docker Compose用户指南](dockercompose.md)
 * [Docker Machine用户指南](dockermachine.md)
