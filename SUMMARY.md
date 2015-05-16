@@ -79,7 +79,7 @@
 	* [启用本地私有镜像服务](Articles/registry_mirror.md)
 	* [自动启动容器](Articles/host_integration.md)
 	* [创建一个基本镜像](Articles/baseimages.md)
-	* [书写Dockerfile的经验](Articles/dockerfile_best-practices.md)
+	* [Dockerfile最佳实践](Articles/dockerfile_best-practices.md)
 	* [使用镜像库客户端认证证书](Articles/certificates.md)
 	* [Docker化Supervisor服务](Articles/using_supervisor.md)
 	* [配置Docker](Articles/configuring.md)
