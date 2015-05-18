@@ -7,7 +7,7 @@
     * [版本说明](About/release-notes.md)
     * [了解Docker](About/understanding-docker.md)
 * [安装](Installation/README.md)
-    * [Ubuntu](Installation/ubuntu.md)
+    * [Ubuntu](Installation/ubuntulinux.md)
     * [Mac OS X](Installation/mac.md)
     * [Microsoft Windows](Installation/windows.md)
     * [Amazon EC2](Installation/amazon.md)
