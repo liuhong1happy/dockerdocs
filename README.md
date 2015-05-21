@@ -16,6 +16,8 @@ QQ群号 181774264 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey
 
 博客地址 [Docker Lover](http://dockerlover.lofter.com)
 
+乐程软件工作室 [社团连接](https://github.com/LeChengSoftStudio)
+
 ## 开始阅读
 
 点击[这里](SUMMARY.md)
