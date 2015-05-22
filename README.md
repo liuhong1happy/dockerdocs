@@ -28,7 +28,7 @@ QQ群号 181774264 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey
 
 [关于Docker](About/docker.md)
 
-[安装Docker](Installation/ubuntu.md)
+[安装Docker](Installation/ubuntulinux.md)
 
 
 
