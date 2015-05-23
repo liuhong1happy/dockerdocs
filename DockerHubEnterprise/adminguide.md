@@ -49,7 +49,7 @@ DHE运行数个Docker服务。这些服务，你可以通过 System Health 和 L
 * admin_server: Used for displaying system health, performing upgrades, configuring settings, and viewing logs.
 * load_balancer: Used for maintaining high availability by distributing load to each image storage service (image_storage_X).
 * log_aggregator: A microservice used for aggregating logs from each of the other services. Handles log persistence and rotation on disk.
-* image_storage_X: Stores Docker images using the Docker Registry HTTP API V2. Typically, multiple image storage services are used in order to provide greater uptime and faster, more efficient resource utilization.
+* image_storage_X: Stores Docker images using the [Docker Registry HTTP API V2](https://github.com/docker/distribution/blob/master/doc/SPEC.md). Typically, multiple image storage services are used in order to provide greater uptime and faster, more efficient resource utilization.
 
 ## DHE system management
 
