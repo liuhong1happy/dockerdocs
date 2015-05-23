@@ -50,15 +50,15 @@
 	* [私有库](DockerHub/repos.md)
 	* [自动构建](DockerHub/builds.md)
 	* [官方库](DockerHub/official_repos.md)
-* [企业版 Docker Hub](DockerHubEnterprise/README.md)
-	* [概述](DockerHubEnterprise/docker-hub-enterprise.md)
-	* [快速开始：基本流程](DockerHubEnterprise/quick-start.md)
-	* [用户指南](DockerHubEnterprise/userguide.md)
-	* [管理员指南](DockerHubEnterprise/adminguide.md)
-	* [安装](DockerHubEnterprise/install.md)
-	* [配置项](DockerHubEnterprise/configuration.md)
-	* [支持](DockerHubEnterprise/support.md)
-	* [版本说明](DockerHubEnterprise/release-notes.md)
+* [企业版 Docker Hub](DockerHubEnterprise/README.md) 
+	* [概述](DockerHubEnterprise/docker-hub-enterprise.md) 翻译*刘红 校译*李金山
+	* [快速开始：基本流程](DockerHubEnterprise/quick-start.md) 翻译*刘红 校译*李金山
+	* [用户指南](DockerHubEnterprise/userguide.md) 翻译*刘红 校译*李金山
+	* [管理员指南](DockerHubEnterprise/adminguide.md) 翻译*刘红 校译*李金山
+	* [安装](DockerHubEnterprise/install.md) 翻译*刘红 校译*李金山
+	* [配置项](DockerHubEnterprise/configuration.md) 翻译*刘红 校译*李金山
+	* [支持](DockerHubEnterprise/support.md) 翻译*刘红 校译*李金山
+	* [版本说明](DockerHubEnterprise/release-notes.md) 翻译*刘红 校译*李金山
 * [实例](Examples/README.md)
 	* [docker化Node.js web应用](Examples/nodejs_web_app.md)
 	* [docker化MongoDB DB服务](Examples/nodejs_web_app.md)
