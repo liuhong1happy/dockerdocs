@@ -31,7 +31,7 @@
 * [用户指南](UserGuide/README.md)
     * [欢迎阅读Docker用户指南](UserGuide/userguide.md)
     * [初识Docker Hub](UserGuide/dockerhub.md)
-    * [Docker化应用](userguide/dockerizing.md)
+    * [Docker化应用](UserGuide/dockerizing.md)
     * [了解Docker容器](UserGuide/dockercontainers.md)
     * [了解Docker镜像](UserGuide/dockerimages.md)
     * [了解Dcoker容器链接](UserGuide/dockerlinks.md)
