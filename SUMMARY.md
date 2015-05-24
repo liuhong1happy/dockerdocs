@@ -66,7 +66,7 @@
 	* [docker化PostgreSQL DB服务](Examples/postgresql_service.md)
 	* [docker化Riak DB服务](Examples/running_riak_service.md)
 	* [docker化SSH服务](Examples/running_ssh_service.md)
-	* [docker化CouchDB DB服务](Examples/nodejs_web_app.md)
+	* [docker化CouchDB DB服务](Examples/couchdb_data_volumes.md)
 	* [docker化Apt-Cacher-ng服务](Examples/apt-cacher-ng.md)
 	* [使用Compose搭建Django环境](Examples/compose_django.md)
 	* [使用Compose搭建Rails环境](Examples/compose_rails.md)
