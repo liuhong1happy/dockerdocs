@@ -3,7 +3,7 @@
 ## 目录
 
 * [引言](About/README.md)
-    * [关于Docker](About/docker.md) 【翻译：刘红 未校译】
+    * [关于Docker](About/docker.md) `【翻译：刘红 未校译】`
     * [版本说明](About/release-notes.md)【翻译：王辉 未校译】
     * [了解Docker](About/understanding-docker.md)【翻译：王辉 未校译】
 * [安装](Installation/README.md)
