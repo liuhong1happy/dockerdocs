@@ -10,7 +10,7 @@
 
 Boot2Docker管理工具就是一个轻量级的Linux虚拟机，专门用来在Mac OS X上运行Docker daemon。VirtualBox虚拟机完全从RAM中运行起来，下载下来大约24M，启动大约5秒。
 
-#### 必备条件
+### 必备条件
 
 你的Mac必须运行着OS X 10.6 "Snow Leopard"或者更新版本的操作系统，以便运行Boot2Docker。
 
@@ -42,7 +42,7 @@ Boot2Docker管理工具就是一个轻量级的Linux虚拟机，专门用来在M
 
 要运行Docker容器，首先你得启动 boot2docker 虚拟机，然后发出 docker 命令来创建、加载和管理容器。你可从 **Applications** 文件夹或命令行启动 boot2docker。
 
-> **注意: **Boot2Docker被设计为一个开发工具. 你不应该在生产环境中使用它。
+> 注意: Boot2Docker被设计为一个开发工具。你不应该在生产环境中使用它。
 
 ### 从Applications文件夹启动
 
@@ -64,7 +64,7 @@ Boot2Docker管理工具就是一个轻量级的Linux虚拟机，专门用来在M
     511136ea3c5a: Pull complete
     31cbccb51277: Pull complete
     e45a5af57b00: Pull complete
-    hello-world:latest: The image you are pulling has been verified. Important: image 	verification is a tech preview feature and should not be relied on to provide security.
+    hello-world:latest: The image you are pulling has been verified. Important: image verification is a tech preview feature and should not be relied on to provide security.
     Status: Downloaded newer image for hello-world:latest
     Hello from Docker.
     This message shows that your installation appears to be working correctly.
@@ -84,7 +84,7 @@ Boot2Docker管理工具就是一个轻量级的Linux虚拟机，专门用来在M
     For more examples and ideas, visit:
      http://docs.docker.com/userguide/
 ```
-*译者注：仔细看看上述内容中的这一部分 "To generate this message, Docker took the following steps:" 会让你对 docker image 和 docker container 有很好的理解。*
+*译者注：仔细看看上述内容中的这一部分 "To generate this message, Docker took the following steps:..." 会让你对 docker image 和 docker container 有很好的理解。*
 
 启动、停止**boot2docker**的更典型方式是使用命令行。
 
