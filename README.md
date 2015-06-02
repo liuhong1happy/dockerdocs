@@ -62,10 +62,10 @@ QQ群号 181774264 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey
 
 ## 社区后续工作
 
-目前社区人力有限
+目前社区人力有限，搁浅如下社区后续工作，希望广大社区爱好者参与，万分感谢。
 
 1. 社区网站建设
-2. 更新docker最新实践方案
+2. 分享docker最新实践方案
 3. 持续跟踪docker相关项目：[Kubernetes](https://github.com/GoogleCloudPlatform/kubernetes)
 4. Docker与OpenStack整合方案：[magnum](https://github.com/openstack/magnum)
 
