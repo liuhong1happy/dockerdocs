@@ -52,6 +52,10 @@ QQ群号 181774264 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey
 
 [贡献你的代码](Project/README.md)
 
+## 部署本Gitbook项目到本地
+
+如果你对docker和gitbook已经很熟悉的朋友，请阅读[本地部署社区Gitbook项目](https://github.com/liuhong1happy/dockerdocs/wiki/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E7%A4%BE%E5%8C%BAGitbook%E9%A1%B9%E7%9B%AE)
+
 
 
 
