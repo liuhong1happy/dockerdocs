@@ -204,7 +204,7 @@ docker客户端相当简单。每一个动作，你都可以通过1个命令来�
 
 我们可以缩减信息，如果我们想返回指定的对象的指，例如我们要返回IP地址：
 
-    $ sudo docker inspect -f '{{ .NetworkSettings.IPAddress }}' nostalgic_morse
+    $ sudo docker inspect -f '{{NetworkSettings.IPAddress }}' nostalgic_morse
 
     172.17.0.5
 

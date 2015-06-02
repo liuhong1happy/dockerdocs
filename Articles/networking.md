@@ -474,7 +474,7 @@ Docker配置容器分5步：
 	
 	 
 	
-	$ sudo docker inspect -f '{{.State.Pid}}' 63f36fc01b5f
+	$ sudo docker inspect -f '{{State.Pid}}' 63f36fc01b5f
 	
 	2778
 	
@@ -584,11 +584,11 @@ docker默认将所有容器连接到虚拟子网docker0。通过创建专属网�
 	
 	 
 	
-	$ sudo docker inspect -f '{{.State.Pid}}' 1f1f4c1f931a
+	$ sudo docker inspect -f '{{State.Pid}}' 1f1f4c1f931a
 	
 	2989
 	
-	$ sudo docker inspect -f '{{.State.Pid}}' 12e343489d2f
+	$ sudo docker inspect -f '{{State.Pid}}' 12e343489d2f
 	
 	3004
 	
