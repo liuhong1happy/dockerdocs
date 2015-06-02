@@ -54,7 +54,11 @@ QQ群号 181774264 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey
 
 ## 部署本Gitbook项目到本地
 
-如果你对docker和gitbook已经很熟悉的朋友，请阅读[本地部署社区Gitbook项目](https://github.com/liuhong1happy/dockerdocs/wiki/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E7%A4%BE%E5%8C%BAGitbook%E9%A1%B9%E7%9B%AE)
+如果你是对docker和gitbook已经很熟悉的朋友，请阅读[本地部署社区Gitbook项目](https://github.com/liuhong1happy/dockerdocs/wiki/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E7%A4%BE%E5%8C%BAGitbook%E9%A1%B9%E7%9B%AE)
+
+## 意见与建议
+
+如果你对我们参与的开源翻译项目有什么意见或者建议，请加入我们的QQ讨论群181774264，或者[Email:liuhong1.happy@163.com](mailto:liuhong1.happy@163.com)，我们将持续改进翻译水平，给大家带来别致的阅读享受。
 
 
 
