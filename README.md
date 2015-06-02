@@ -48,7 +48,7 @@ QQ群号 181774264 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey
 
 [了解企业版 Docker Hub](DockerHubEnterprise/README.md) 
 
-[有用的参考工具]((Reference/README.md)
+[有用的参考工具](Reference/README.md)
 
 [贡献你的代码](Project/README.md)
 
