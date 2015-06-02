@@ -4,10 +4,10 @@
 
 * [引言](About/README.md)
     * [关于Docker](About/docker.md) `翻译：刘红 未校译`
-    * [版本说明](About/release-notes.md)【翻译：王辉 未校译】
-    * [了解Docker](About/understanding-docker.md)【翻译：王辉 未校译】
+    * [版本说明](About/release-notes.md)`翻译：王辉 未校译`
+    * [了解Docker](About/understanding-docker.md)`翻译：王辉 未校译`
 * [安装](Installation/README.md)
-    * [Ubuntu](Installation/ubuntulinux.md)【翻译：王辉 未校译】
+    * [Ubuntu](Installation/ubuntulinux.md)`翻译：王辉 未校译`
     * [Mac OS X](Installation/mac.md)
     * [Microsoft Windows](Installation/windows.md)
     * [Amazon EC2](Installation/amazon.md)
@@ -123,10 +123,10 @@
 	* [Docker Remote API Client Libraries](Reference/commandline/cli.md)
 	* [Docker Hub Accounts API](Reference/commandline/cli.md)
 * [贡献](Project/README.md)
-	* [首先了解README](Project/who-written-for.md)
-	* [在Linux或者OS X上获取必要软件](Project/software-required.md)
+	* [首先了解README](Project/who-written-for.md)`翻译：王辉 未校译`
+	* [在Linux或者OS X上获取必要软件](Project/software-required.md)`翻译：王辉 未校译`
 	* [在Windows上获取必要软件](Project/software-required-win.md)
-	* [配置Git](Project/set-up-git.md)
+	* [配置Git](Project/set-up-git.md)`翻译：王辉 未校译`
 	* [配置开发环境](Project/set-up-dev-env.md)
 	* [了解测试和测试文档](Project/test-and-docs.md)
 	* [了解贡献流程](Project/make-a-contribution.md)
