@@ -24,7 +24,7 @@ QQ群号 181774264 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey
 
 ## 建议阅读顺序
 
-如果你是对docker一无所知的朋友，我们建议你对本GitBook项目的阅读顺序如下：
+如果你是对docker一无所知的朋友，我们强烈建议你对本GitBook项目的阅读顺序如下：
 
 [关于Docker](About/docker.md)
 
@@ -59,6 +59,16 @@ QQ群号 181774264 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey
 ## 意见与建议
 
 如果你对我们参与的开源翻译项目有什么意见或者建议，请加入我们的QQ讨论群181774264，或者[Email:liuhong1.happy@163.com](mailto:liuhong1.happy@163.com)，我们将持续改进翻译水平，给大家带来别致的阅读享受。
+
+## 社区后续工作
+
+目前社区人力有限
+
+1. 社区网站建设
+2. 更新docker最新实践方案
+3. 持续跟踪docker相关项目：[Kubernetes](https://github.com/GoogleCloudPlatform/kubernetes)
+4. Docker与OpenStack整合方案：[magnum](https://github.com/openstack/magnum)
+
 
 
 
