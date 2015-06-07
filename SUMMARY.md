@@ -9,24 +9,24 @@
 * [安装](Installation/README.md)
     * [Ubuntu](Installation/ubuntulinux.md)`翻译：王辉 未校译`
     * [Mac OS X](Installation/mac.md)`翻译：黄土高坡 未校译`
-    * [Microsoft Windows](Installation/windows.md)
-    * [Amazon EC2](Installation/amazon.md)
-    * [Arch Linux](Installation/archlinux.md)
-    * [二进制安装](Installation/binaries.md)
-    * [CentOS](Installation/centos.md)
-    * [CRUX Linux](Installation/cruxlinux.md)
-    * [Debian](Installation/debian.md)
-    * [Fedora](Installation/fedora.md)
-    * [FrungalWare](Installation/frugalware.md)
-    * [Google Cloud Platform](Installation/google.md)
-    * [Gentoo](Installation/geetoolinux.md)
-    * [IBM Softlayer](Installation/softlayer.md)
-    * [Joyent Compute Service](Installation/joyent.md)
-    * [Microsoft Azure](Installation/azure.md)
-    * [Rackspace Cloud](Installation/rackspace.md)
-    * [Red Hat Enterprise Linux](Installation/rhel.md)
-    * [Oracle Linux](Installation/oracle.md)
-    * [SUSE](Installation/suse.md)
+    * [Microsoft Windows](Installation/windows.md)`预计完成时间2015-07-05`
+    * [Amazon EC2](Installation/amazon.md)`预计完成时间2015-07-05`
+    * [Arch Linux](Installation/archlinux.md)`预计完成时间2015-07-05`
+    * [二进制安装](Installation/binaries.md)`预计完成时间2015-06-14`
+    * [CentOS](Installation/centos.md)`预计完成时间2015-07-05`
+    * [CRUX Linux](Installation/cruxlinux.md)`预计完成时间2015-07-05`
+    * [Debian](Installation/debian.md)`预计完成时间2015-07-14`
+    * [Fedora](Installation/fedora.md)`预计完成时间2015-07-14`
+    * [FrungalWare](Installation/frugalware.md)`预计完成时间2015-07-14`
+    * [Google Cloud Platform](Installation/google.md)`预计完成时间2015-07-14`
+    * [Gentoo](Installation/geetoolinux.md)`预计完成时间2015-07-14`
+    * [IBM Softlayer](Installation/softlayer.md)`预计完成时间2015-07-14`
+    * [Joyent Compute Service](Installation/joyent.md)`预计完成时间2015-07-21`
+    * [Microsoft Azure](Installation/azure.md)`预计完成时间2015-07-21`
+    * [Rackspace Cloud](Installation/rackspace.md)`预计完成时间2015-07-21`
+    * [Red Hat Enterprise Linux](Installation/rhel.md)`预计完成时间2015-07-21`
+    * [Oracle Linux](Installation/oracle.md)`预计完成时间2015-07-21`
+    * [SUSE](Installation/suse.md)`预计完成时间2015-07-21`
     * [Dcoker Compose](Compose/install/compose.md) `翻译：刘红 未校译`
 * [用户指南](UserGuide/README.md)
     * [欢迎阅读Docker用户指南](UserGuide/userguide.md) `翻译：刘红 未校译`
@@ -39,17 +39,17 @@
     * [应用客户元数据](UserGuide/labels-custom-metadata.md) `翻译：刘红 未校译`
     * [深入了解Docker Hub](UserGuide/dockerrepos.md) `翻译：刘红 未校译`
     * [Docker Compose用户指南](Compose/dockercompose.md) `翻译：刘红 未校译`
-	    * [在生产环境使用Compose](Compose/production.md)
-	    * [扩展Compose服务](Compose/extends.md)
+	    * [在生产环境使用Compose](Compose/production.md)`预计完成时间2015-06-14`
+	    * [扩展Compose服务](Compose/extends.md)`预计完成时间2015-06-14`
     * [Docker Machine用户指南](UserGuide/dockermachine.md) `翻译：刘红 未校译`
     * [Docker Swarm用户指南](UserGuide/dockerswarm.md) `翻译：刘红 未校译`
 * [Docker Hub](DockerHub/README.md)
 	* [Docker Hub](DockerHub/docker-hub.md)`翻译：刘红 未校译`
 	* [账户](DockerHub/accounts.md)`翻译：刘红 未校译`
 	* [用户指南](DockerHub/userguide.md)`翻译：刘红 未校译`
-	* [私有库](DockerHub/repos.md)
-	* [自动构建](DockerHub/builds.md)
-	* [官方库](DockerHub/official_repos.md)
+	* [私有库](DockerHub/repos.md)`预计完成时间2015-06-14`
+	* [自动构建](DockerHub/builds.md)`预计完成时间2015-06-14`
+	* [官方库](DockerHub/official_repos.md)`预计完成时间2015-06-14`
 * [企业版 Docker Hub](DockerHubEnterprise/README.md) 
 	* [概述](DockerHubEnterprise/docker-hub-enterprise.md)  `翻译：刘红 未校译`
 	* [快速开始：基本流程](DockerHubEnterprise/quick-start.md)  `翻译：刘红 未校译`
@@ -95,10 +95,10 @@
 	* [Docker命令行(一)](Reference/commandline/cli-1.md)`翻译：刘红 未校译`
 	* [Docker命令行(二)](Reference/commandline/cli-2.md)`翻译：刘红 未校译`
 	* [Docker命令行(三)](Reference/commandline/cli-3.md)`翻译：刘红 未校译`
-	* [Docker命令行(四)](Reference/commandline/cli-4.md)
+	* [Docker命令行(四)](Reference/commandline/cli-4.md)`预计完成时间2015-06-14`
 	* [Docker命令行(五)](Reference/commandline/cli-5.md)`翻译：刘红 未校译`
-	* [Dockerfile](Reference/commandline/cli.md)
-	* [问与答-FAQ](Reference/commandline/cli.md)
+	* [Dockerfile](Reference/commandline/cli.md)`预计完成时间2015-06-28`
+	* [问与答-FAQ](Reference/commandline/cli.md)`预计完成时间2015-06-28`
 	* [Run命令参考](Reference/run.md)`翻译：罗玉林 未校译`
 	* [Compose命令行](Compose/cli.md)`翻译：罗玉林 未校译`
 	* [Compose yml](Compose/yml.md)`翻译：罗玉林 未校译`
@@ -109,36 +109,36 @@
 	* [Swarm filters](Swarm/filter.md)`翻译：罗玉林 未校译`
 	* [Swarm API](Swarm/API.md)`翻译：罗玉林 未校译`
 	* [Docker Registry 2.0](Reference/commandline/cli.md)
-		* [部署一个私有镜像库](Reference/commandline/cli.md)
-		* [配置私有镜像库](Reference/commandline/cli.md)
-		* [存储驱动模块](Reference/commandline/cli.md)
-		* [了解notifications](Reference/commandline/cli.md)
-		* [Registry Service API v2](Reference/commandline/cli.md)
-		* [JSON格式](Reference/commandline/cli.md)
-		* [中心服务验证](Reference/commandline/cli.md)
+		* [部署一个私有镜像库](Reference/commandline/cli.md)`预计完成时间2015-06-28`
+		* [配置私有镜像库](Reference/commandline/cli.md)`预计完成时间2015-06-28`
+		* [存储驱动模块](Reference/commandline/cli.md)`预计完成时间2015-06-28`
+		* [了解notifications](Reference/commandline/cli.md)`预计完成时间2015-06-28`
+		* [Registry Service API v2](Reference/commandline/cli.md)`预计完成时间2015-06-28`
+		* [JSON格式](Reference/commandline/cli.md)`预计完成时间2015-06-28`
+		* [中心服务验证](Reference/commandline/cli.md)`预计完成时间2015-06-28`
 	* [Docker Hub and Registry 1.0](Reference/commandline/cli.md)
-		* [Docker Registry API v1](Reference/commandline/cli.md)
-		* [Docker Registry 1.0 API Client Libraries](Reference/commandline/cli.md)
-	* [Docker Hub API](Reference/commandline/cli.md)
+		* [Docker Registry API v1](Reference/commandline/cli.md)`预计完成时间2015-06-28`
+		* [Docker Registry 1.0 API Client Libraries](Reference/commandline/cli.md)`预计完成时间2015-06-28`
+	* [Docker Hub API](Reference/commandline/cli.md)`预计完成时间2015-06-21`
 	* [Docker Remote API](Reference/commandline/cli.md)`翻译：刘红 未校译`
-	* [Docker Remote API v1.18](Reference/commandline/cli.md)
-	* [Docker Remote API v1.17](Reference/commandline/cli.md)
-	* [Docker Remote API v1.16](Reference/commandline/cli.md)
-	* [Docker Remote API Client Libraries](Reference/commandline/cli.md)
+	* [Docker Remote API v1.18](Reference/commandline/cli.md)`预计完成时间2015-06-21`
+	* [Docker Remote API v1.17](Reference/commandline/cli.md)`预计完成时间2015-06-21`
+	* [Docker Remote API v1.16](Reference/commandline/cli.md)`预计完成时间2015-06-21`
+	* [Docker Remote API Client Libraries](Reference/commandline/cli.md)`预计完成时间2015-06-21`
 	* [Docker Hub Accounts API](Reference/api/docker_io_accounts_api.md)`翻译：刘红 未校译`
 * [贡献](Project/README.md)
 	* [首先了解README](Project/who-written-for.md)`翻译：王辉 未校译`
 	* [在Linux或者OS X上获取必要软件](Project/software-required.md)`翻译：王辉 未校译`
-	* [在Windows上获取必要软件](Project/software-required-win.md)
+	* [在Windows上获取必要软件](Project/software-required-win.md)`预计完成时间2015-06-28`
 	* [配置Git](Project/set-up-git.md)`翻译：王辉 未校译`
 	* [配置开发环境](Project/set-up-dev-env.md)`翻译：王辉 未校译`
 	* [了解测试和测试文档](Project/test-and-docs.md)`翻译：王辉 未校译`
-	* [了解贡献流程](Project/make-a-contribution.md)
-	* [发现bug](Project/find-an-issue.md)
-	* [解决bug](Project/work-issue.md)
-	* [创建pull request](Project/create-pr.md)
-	* [参与公关审查](Project/review-pr.md)
-	* [高级贡献](Project/advanced-contributing.md)
-	* [寻求帮助](Project/get-help.md)
-	* [编程风格指南](Project/coding-style.md)
-	* [文档风格指南](Project/doc-style.md)
+	* [了解贡献流程](Project/make-a-contribution.md)`预计完成时间2015-06-14`
+	* [发现bug](Project/find-an-issue.md)`预计完成时间2015-06-14`
+	* [解决bug](Project/work-issue.md)`预计完成时间2015-06-14`
+	* [创建pull request](Project/create-pr.md)`预计完成时间2015-06-14`
+	* [参与公关审查](Project/review-pr.md)`预计完成时间2015-06-21`
+	* [高级贡献](Project/advanced-contributing.md)`预计完成时间2015-06-21`
+	* [寻求帮助](Project/get-help.md)`预计完成时间2015-06-21`
+	* [编程风格指南](Project/coding-style.md)`预计完成时间2015-06-21`
+	* [文档风格指南](Project/doc-style.md)`预计完成时间2015-06-21`
