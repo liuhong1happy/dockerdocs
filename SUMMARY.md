@@ -120,7 +120,7 @@
 		* [Docker Registry API v1](Reference/commandline/cli.md)
 		* [Docker Registry 1.0 API Client Libraries](Reference/commandline/cli.md)
 	* [Docker Hub API](Reference/commandline/cli.md)
-	* [Docker Remote API](Reference/commandline/cli.md)
+	* [Docker Remote API](Reference/commandline/cli.md)`翻译：刘红 未校译`
 	* [Docker Remote API v1.18](Reference/commandline/cli.md)
 	* [Docker Remote API v1.17](Reference/commandline/cli.md)
 	* [Docker Remote API v1.16](Reference/commandline/cli.md)
