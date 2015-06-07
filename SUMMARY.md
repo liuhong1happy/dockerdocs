@@ -8,7 +8,7 @@
     * [了解Docker](About/understanding-docker.md)`翻译：王辉 未校译`
 * [安装](Installation/README.md)
     * [Ubuntu](Installation/ubuntulinux.md)`翻译：王辉 未校译`
-    * [Mac OS X](Installation/mac.md)
+    * [Mac OS X](Installation/mac.md)`翻译：黄土高坡 未校译`
     * [Microsoft Windows](Installation/windows.md)
     * [Amazon EC2](Installation/amazon.md)
     * [Arch Linux](Installation/archlinux.md)
