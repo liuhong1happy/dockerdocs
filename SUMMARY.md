@@ -79,8 +79,8 @@
 	* [启用本地私有镜像服务](Articles/registry_mirror.md) `翻译：刘红 未校译`
 	* [自动启动容器](Articles/host_integration.md) `翻译：刘红 未校译`
 	* [创建一个基本镜像](Articles/baseimages.md) `翻译：刘红 未校译`
-	* [Dockerfile最佳实践](Articles/dockerfile_best-practices.md)
-	* [使用镜像库客户端认证证书](Articles/certificates.md)
+	* [Dockerfile最佳实践](Articles/dockerfile_best-practices.md)`预计完成时间2015-06-14`
+	* [使用镜像库客户端认证证书](Articles/certificates.md)`预计完成时间2015-06-14`
 	* [Docker化Supervisor服务](Articles/using_supervisor.md) `翻译：刘红 未校译`
 	* [配置Docker](Articles/configuring.md) `翻译：刘红 未校译`
 	* [使用CFEngine配置管理](Articles/cfengine_process_management.md) `翻译：刘红 未校译`
@@ -88,8 +88,8 @@
 	* [使用Chef配置管理](Articles/chef.md) `翻译：刘红 未校译`
 	* [使用PowerShell DSC配置管理](Articles/dsc.md) `翻译：刘红 未校译`
 	* [跨主机连接容器-ambassador容器](Articles/ambassador_pattern_linking.md) `翻译：刘红 未校译`
-	* [运行时规律](Articles/runmetrics.md)
-	* [增加一个Boot2Docker数据卷](Articles/b2d_volume_resize.md)
+	* [运行时规律](Articles/runmetrics.md)`预计完成时间2015-06-14`
+	* [增加一个Boot2Docker数据卷](Articles/b2d_volume_resize.md)`预计完成时间2015-06-14`
 	* [使用Systemd控制和配置Docker](Articles/systemd.md) `翻译：刘红 未校译`
 * [参考](Reference/README.md)
 	* [Docker命令行(一)](Reference/commandline/cli-1.md)`翻译：刘红 未校译`
