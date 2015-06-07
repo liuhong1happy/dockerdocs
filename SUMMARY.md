@@ -125,7 +125,7 @@
 	* [Docker Remote API v1.17](Reference/commandline/cli.md)
 	* [Docker Remote API v1.16](Reference/commandline/cli.md)
 	* [Docker Remote API Client Libraries](Reference/commandline/cli.md)
-	* [Docker Hub Accounts API](Reference/commandline/cli.md)
+	* [Docker Hub Accounts API](Reference/api/docker_io_accounts_api.md)`翻译：刘红 未校译`
 * [贡献](Project/README.md)
 	* [首先了解README](Project/who-written-for.md)`翻译：王辉 未校译`
 	* [在Linux或者OS X上获取必要软件](Project/software-required.md)`翻译：王辉 未校译`
