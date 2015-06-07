@@ -99,15 +99,15 @@
 	* [Docker命令行(五)](Reference/commandline/cli-5.md)`翻译：刘红 未校译`
 	* [Dockerfile](Reference/commandline/cli.md)
 	* [问与答-FAQ](Reference/commandline/cli.md)
-	* [Run命令参考](Reference/commandline/cli.md)`翻译：罗玉林 未校译`
-	* [Compose命令行](Reference/commandline/cli.md)`翻译：罗玉林 未校译`
-	* [Compose yml](Reference/commandline/cli.md)`翻译：罗玉林 未校译`
-	* [Compose ENV变量](Reference/commandline/cli.md)`翻译：罗玉林 未校译`
-	* [Compose命令行实现](Reference/commandline/cli.md)`翻译：罗玉林 未校译`
-	* [Swarm发现服务](Reference/commandline/cli.md)`翻译：罗玉林 未校译`
-	* [Swarm策略](Reference/commandline/cli.md)`翻译：罗玉林 未校译`
-	* [Swarm filters](Reference/commandline/cli.md)`翻译：罗玉林 未校译`
-	* [Swarm API](Reference/commandline/cli.md)`翻译：罗玉林 未校译`
+	* [Run命令参考](Reference/run.md)`翻译：罗玉林 未校译`
+	* [Compose命令行](Compose/cli.md)`翻译：罗玉林 未校译`
+	* [Compose yml](Compose/yml.md)`翻译：罗玉林 未校译`
+	* [Compose ENV变量](Compose/evn.md)`翻译：罗玉林 未校译`
+	* [Compose命令行实现](Compose/completion.md)`翻译：罗玉林 未校译`
+	* [Swarm发现服务](Swarm/discovery.md)`翻译：罗玉林 未校译`
+	* [Swarm策略](Swarm/strategy.md)`翻译：罗玉林 未校译`
+	* [Swarm filters](Swarm/filter.md)`翻译：罗玉林 未校译`
+	* [Swarm API](Swarm/API.md)`翻译：罗玉林 未校译`
 	* [Docker Registry 2.0](Reference/commandline/cli.md)
 		* [部署一个私有镜像库](Reference/commandline/cli.md)
 		* [配置私有镜像库](Reference/commandline/cli.md)
