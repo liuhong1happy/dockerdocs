@@ -44,9 +44,9 @@
     * [Docker Machine用户指南](UserGuide/dockermachine.md) `翻译：刘红 未校译`
     * [Docker Swarm用户指南](UserGuide/dockerswarm.md) `翻译：刘红 未校译`
 * [Docker Hub](DockerHub/README.md)
-	* [Docker Hub](DockerHub/docker-hub.md)
-	* [账户](DockerHub/accounts.md)
-	* [用户指南](DockerHub/userguide.md)
+	* [Docker Hub](DockerHub/docker-hub.md)`翻译：刘红 未校译`
+	* [账户](DockerHub/accounts.md)`翻译：刘红 未校译`
+	* [用户指南](DockerHub/userguide.md)`翻译：刘红 未校译`
 	* [私有库](DockerHub/repos.md)
 	* [自动构建](DockerHub/builds.md)
 	* [官方库](DockerHub/official_repos.md)
@@ -73,8 +73,8 @@
 	* [使用Compose搭建WordPress应用](Examples/compose_wordpress.md) `翻译：刘红 未校译`
 * [文章](Articles/README.md)
 	* [Docker基本操作](Articles/basics.md) `翻译：刘红 未校译`
-	* [Docker网络](Articles/networking.md)【翻译：罗玉林 未校译】
-	* [Docker安全](Articles/security.md)【翻译：王辉 未校译】
+	* [Docker网络](Articles/networking.md)`翻译：罗玉林 未校译`
+	* [Docker安全](Articles/security.md)`翻译：王辉 未校译`
 	* [运行Docker HTTPS服务](Articles/https.md) `翻译：刘红 未校译`
 	* [启用本地私有镜像服务](Articles/registry_mirror.md) `翻译：刘红 未校译`
 	* [自动启动容器](Articles/host_integration.md) `翻译：刘红 未校译`
@@ -127,8 +127,8 @@
 	* [在Linux或者OS X上获取必要软件](Project/software-required.md)`翻译：王辉 未校译`
 	* [在Windows上获取必要软件](Project/software-required-win.md)
 	* [配置Git](Project/set-up-git.md)`翻译：王辉 未校译`
-	* [配置开发环境](Project/set-up-dev-env.md)
-	* [了解测试和测试文档](Project/test-and-docs.md)
+	* [配置开发环境](Project/set-up-dev-env.md)`翻译：王辉 未校译`
+	* [了解测试和测试文档](Project/test-and-docs.md)`翻译：王辉 未校译`
 	* [了解贡献流程](Project/make-a-contribution.md)
 	* [发现bug](Project/find-an-issue.md)
 	* [解决bug](Project/work-issue.md)
