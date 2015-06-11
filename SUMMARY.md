@@ -9,6 +9,7 @@
 * [安装](Installation/README.md)
     * [Ubuntu](Installation/ubuntulinux.md)`翻译：王辉 未校译`
     * [Mac OS X](Installation/mac.md)`翻译：黄土高坡 未校译`
+    * [Kitematic on Mac OS X](Kitematic/install.md)`预计完成时间2015-07-05`
     * [Microsoft Windows](Installation/windows.md)`预计完成时间2015-07-05`
     * [Amazon EC2](Installation/amazon.md)`预计完成时间2015-07-05`
     * [Arch Linux](Installation/archlinux.md)`预计完成时间2015-07-05`
@@ -43,6 +44,7 @@
 	    * [扩展Compose服务](Compose/extends.md)`预计完成时间2015-06-14`
     * [Docker Machine用户指南](UserGuide/dockermachine.md) `翻译：刘红 未校译`
     * [Docker Swarm用户指南](UserGuide/dockerswarm.md) `翻译：刘红 未校译`
+    * [Kitematic用户指南](Kitematic/userguide.md)`预计完成时间2015-07-05`
 * [Docker Hub](DockerHub/README.md)
 	* [Docker Hub](DockerHub/docker-hub.md)`翻译：刘红 未校译`
 	* [账户](DockerHub/accounts.md)`翻译：刘红 未校译`
@@ -71,6 +73,9 @@
 	* [使用Compose搭建Django环境](Examples/compose_django.md) `翻译：刘红 未校译`
 	* [使用Compose搭建Rails环境](Examples/compose_rails.md) `翻译：刘红 未校译`
 	* [使用Compose搭建WordPress应用](Examples/compose_wordpress.md) `翻译：刘红 未校译`
+	* [Kitematic教程:安装Minecraft服务](Kitematic/minecraft-server.md)`预计完成时间2015-07-05`
+	* [Kitematic教程:Docker化Nginx服务](Kitematic/minecraft-server.md)`预计完成时间2015-07-05`
+	* [Kitematic教程:Docker化RethinkDB服务](Kitematic/minecraft-server.md)`预计完成时间2015-07-05`
 * [文章](Articles/README.md)
 	* [Docker基本操作](Articles/basics.md) `翻译：刘红 未校译`
 	* [Docker网络](Articles/networking.md)`翻译：罗玉林 未校译`
@@ -126,6 +131,8 @@
 	* [Docker Remote API v1.16](Reference/commandline/cli.md)`预计完成时间2015-06-21`
 	* [Docker Remote API Client Libraries](Reference/commandline/cli.md)`预计完成时间2015-06-21`
 	* [Docker Hub Accounts API](Reference/api/docker_io_accounts_api.md)`翻译：刘红 未校译`
+	* [Kitematic问与答](Kitematic/faq.md)`预计完成时间2015-06-21`
+	* [Kitematic常见问题](Kitematic/known-issues.md)`预计完成时间2015-06-21`
 * [贡献](Project/README.md)
 	* [首先了解README](Project/who-written-for.md)`翻译：王辉 未校译`
 	* [在Linux或者OS X上获取必要软件](Project/software-required.md)`翻译：王辉 未校译`
