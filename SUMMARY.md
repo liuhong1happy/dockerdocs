@@ -140,10 +140,10 @@
 	* [配置Git](Project/set-up-git.md)`翻译：王辉 未校译`
 	* [配置开发环境](Project/set-up-dev-env.md)`翻译：王辉 未校译`
 	* [了解测试和测试文档](Project/test-and-docs.md)`翻译：王辉 未校译`
-	* [了解贡献流程](Project/make-a-contribution.md)`预计完成时间2015-06-14`
-	* [发现bug](Project/find-an-issue.md)`预计完成时间2015-06-14`
-	* [解决bug](Project/work-issue.md)`预计完成时间2015-06-14`
-	* [创建pull request](Project/create-pr.md)`预计完成时间2015-06-14`
+	* [了解贡献流程](Project/make-a-contribution.md)`翻译：王辉 未校译`
+	* [发现bug](Project/find-an-issue.md)`翻译：王辉 未校译`
+	* [解决bug](Project/work-issue.md)`翻译：王辉 未校译`
+	* [创建pull request](Project/create-pr.md)`翻译：王辉 未校译`
 	* [参与公关审查](Project/review-pr.md)`预计完成时间2015-06-21`
 	* [高级贡献](Project/advanced-contributing.md)`预计完成时间2015-06-21`
 	* [寻求帮助](Project/get-help.md)`预计完成时间2015-06-21`
