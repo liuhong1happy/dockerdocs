@@ -53,7 +53,7 @@ For CentOS-6, there is a package name conflict with a system tray application an
 
 当使用推荐的方法安装Docker时，安装的往往不是最新的Docker版本。如果你需要安装最新版本，你可以直接安装二进制文件。
 
-当通过二进制而不通过软件包的形式安装，你可能需要整合Docker和Systemd。为此，需要从Github库上安装两个unit files(service 和 socket)到/etc/systemd/system。
+当通过二进制而不通过软件包的形式安装，你可能需要整合Docker和Systemd。为此，需要从[Github库](https://github.com/docker/docker/tree/master/contrib/init/systemd)上安装两个unit files(service 和 socket)到/etc/systemd/system。
 
 请开始使用Docker服务。
 
