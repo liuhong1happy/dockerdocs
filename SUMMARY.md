@@ -125,7 +125,7 @@
 		* [Docker Registry API v1](Reference/commandline/cli.md)`预计完成时间2015-06-28`
 		* [Docker Registry 1.0 API Client Libraries](Reference/commandline/cli.md)`预计完成时间2015-06-28`
 	* [Docker Hub API](Reference/commandline/cli.md)`预计完成时间2015-06-21`
-	* [Docker Remote API](Reference/commandline/cli.md)`翻译：刘红 未校译`
+	* [Docker Remote API](Reference/api/docker_remote_api.md)`翻译：刘红 未校译`
 	* [Docker Remote API v1.18](Reference/commandline/cli.md)`预计完成时间2015-06-21`
 	* [Docker Remote API v1.17](Reference/commandline/cli.md)`预计完成时间2015-06-21`
 	* [Docker Remote API v1.16](Reference/commandline/cli.md)`预计完成时间2015-06-21`
