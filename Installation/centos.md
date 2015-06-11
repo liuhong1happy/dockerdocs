@@ -11,7 +11,7 @@ Docker支持以下几个版本的CentOS:
 
 ## 内核支持
 
-Currently the CentOS project will only support Docker when running on kernels shipped by the distribution. There are kernel changes which will cause issues if one decides to step outside that box and run non-distribution kernel packages.
+当前CentOS将仅仅支持Docker，当运行在分布式内核。如果你运行在沙盒之外或非分布式内核包上，因为有内核修改，将会造成bug。
 
 在[CentOS-6.5](http://www.centos.org/)或更高版本的CentOS上运行Docker，内核需要升级到2.6.32-431或更高版本，这些版本的内核做了特别的修正，使得Docker可以在这些内核上运行。
 
@@ -33,11 +33,11 @@ CentOS-7引入了firewalld,包装了iptables功能可能会和Docker冲突.
 
 ## 在CentOS-6.5上安装Docker
 
-对于CentOS-6.5, Docker软件包是Extra Packages for Enterprise Linux (EPEL)软件包的一部分, 一个社区创建和维护的对于RHEL贡献的补充包。
+对于CentOS-6.5, Docker软件包是[Extra Packages for Enterprise Linux (EPEL)](https://fedoraproject.org/wiki/EPEL)软件包的一部分, 一个社区创建和维护的对于RHEL贡献的补充包。
 
-Firstly, you need to ensure you have the EPEL repository enabled. Please follow the EPEL installation instructions.
+首先，你需要确保你有EPEL软件包可用。没有的话，请阅读[EPEL安装说明](https://fedoraproject.org/wiki/EPEL#How_can_I_use_these_extra_packages.3F)。
 
-For CentOS-6, there is a package name conflict with a system tray application and its executable, so the Docker RPM package was called docker-io.
+对于CentOS-6，有一个包的名称可能会和系统托盘应用冲突，妨碍运行，因此Docker PRM包叫做docker-io。
 
 为了能顺利安装docker-io到CentOS-6上, 你首先需要移除docker软件包.
 
