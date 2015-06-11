@@ -5,29 +5,27 @@ Docker支持以下几个版本的CentOS:
 * CentOS 7 (64-bit)
 * CentOS 6.5 (64-bit) 及更高版本
 
-These instructions are likely work for other binary compatible EL6/EL7 distributions such as Scientific Linux, but they haven't been tested.
+本文描述可能也支持具有相同二进制编译的EL6/EL7分支，例如Scientific Linux等。但是，这些还没有测试过。
 
-请注意，基于当前Docker技术的限制，Docker只能运行在64位的系统上。
+请注意，基于当前Docker技术的限制，Docker只能运行在 **64位** 的系统上。
 
 ## 内核支持
 
 Currently the CentOS project will only support Docker when running on kernels shipped by the distribution. There are kernel changes which will cause issues if one decides to step outside that box and run non-distribution kernel packages.
 
-在CentOS-6.5或更高版本的CentOS上运行Docker，内核需要升级到2.6.32-431 或更高版本，这些版本的内核做了特别的修正，使得Docker可以在这些内核上运行。
+在[CentOS-6.5](http://www.centos.org/)或更高版本的CentOS上运行Docker，内核需要升级到2.6.32-431或更高版本，这些版本的内核做了特别的修正，使得Docker可以在这些内核上运行。
 
 ## 在CentOS-7上安装Docker
 
-
-Docker is included by default in the CentOS-Extras repository. 
-运行以下安装命令：
+Docker默认情况已经在CentOS-Extras软件包中已经包含了。运行以下安装命令：
 
   $ sudo yum install docker
 
-Please continue with the Starting the Docker daemon.
+安装好后可以查看，下文“启动Docker Daemon”。
 
 ## FirewallD
 
-CentOS-7 introduced firewalld, which is a wrapper around iptables and can conflict with Docker.
+CentOS-7引入了firewalld, which is a wrapper around iptables and can conflict with Docker.
 
 When firewalld is started or restarted it will remove the DOCKER chain from iptables, preventing Docker from working properly.
 
@@ -35,28 +33,27 @@ When using Systemd, firewalld is started before Docker, but if you start or rest
 
 ## 在CentOS-6.5上安装Docker
 
-For CentOS-6.5, the Docker package is part of Extra Packages for Enterprise Linux (EPEL) repository, a community effort to create and maintain additional packages for the RHEL distribution.
+对于CentOS-6.5, Docker软件包是Extra Packages for Enterprise Linux (EPEL)软件包的一部分, 一个社区创建和维护的对于RHEL贡献的补充包。
 
 Firstly, you need to ensure you have the EPEL repository enabled. Please follow the EPEL installation instructions.
 
 For CentOS-6, there is a package name conflict with a system tray application and its executable, so the Docker RPM package was called docker-io.
 
-To proceed with docker-io installation on CentOS-6, you may need to remove the docker package first.
+为了能顺利安装docker-io到CentOS-6上, 你首先需要移除docker软件包.
 
   $ sudo yum -y remove docker
   
-Next, let's install the docker-io package which will install Docker on our host.
+接下来安装docker-io软件包，这将安装Docker在你的主机上。
 
   $ sudo yum install docker-io
   
-Please continue with the Starting the Docker daemon.
+安装好后可以查看，下文“启动Docker Daemon”。
 
 ## 手动安装Docker的最新版本
 
 当使用推荐的方法安装Docker时，安装的往往不是最新的Docker版本。如果你需要安装最新版本，你可以直接安装二进制文件。
 
-
-When installing the binary without a package, you may want to integrate Docker with Systemd. For this, install the two unit files (service and socket) from the GitHub repository to /etc/systemd/system.
+当通过二进制而不通过软件包的形式安装，你可能需要整合Docker和Systemd。为此，需要从Github库上安装两个unit files(service 和 socket)到/etc/systemd/system。
 
 请开始使用Docker服务。
 
