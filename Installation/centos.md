@@ -25,11 +25,11 @@ Docker默认情况已经在CentOS-Extras软件包中已经包含了。运行以�
 
 ## FirewallD
 
-CentOS-7引入了firewalld, which is a wrapper around iptables and can conflict with Docker.
+CentOS-7引入了firewalld,包装了iptables功能可能会和Docker冲突.
 
-When firewalld is started or restarted it will remove the DOCKER chain from iptables, preventing Docker from working properly.
+当firewalld启动或者重启时，它将从iptables列表中移除Docker chain,阻止Docker友好的运行。
 
-When using Systemd, firewalld is started before Docker, but if you start or restart firewalld after Docker, you will have to restart the Docker daemon.
+当使用Systemd时，firewalld会在docker之前启动，如果你要从firewalld之后启动Docker，你必须得重启Docker daemon。
 
 ## 在CentOS-6.5上安装Docker
 
