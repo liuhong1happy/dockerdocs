@@ -13,7 +13,7 @@
     * [Amazon EC2](Installation/amazon.md)`预计完成时间2015-07-05`
     * [Arch Linux](Installation/archlinux.md)`预计完成时间2015-07-05`
     * [二进制安装](Installation/binaries.md)`预计完成时间2015-06-14`
-    * [CentOS](Installation/centos.md)`预计完成时间2015-07-05`
+    * [CentOS](Installation/centos.md)`翻译：Shawn 未校译`
     * [CRUX Linux](Installation/cruxlinux.md)`预计完成时间2015-07-05`
     * [Debian](Installation/debian.md)`预计完成时间2015-07-14`
     * [Fedora](Installation/fedora.md)`预计完成时间2015-07-14`
