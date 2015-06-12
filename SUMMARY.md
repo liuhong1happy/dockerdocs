@@ -144,8 +144,8 @@
 	* [发现bug](Project/find-an-issue.md)`翻译：王辉 未校译`
 	* [解决bug](Project/work-issue.md)`翻译：王辉 未校译`
 	* [创建pull request](Project/create-pr.md)`翻译：王辉 未校译`
-	* [参与公关审查](Project/review-pr.md)`预计完成时间2015-06-21`
-	* [高级贡献](Project/advanced-contributing.md)`预计完成时间2015-06-21`
-	* [寻求帮助](Project/get-help.md)`预计完成时间2015-06-21`
-	* [编程风格指南](Project/coding-style.md)`预计完成时间2015-06-21`
-	* [文档风格指南](Project/doc-style.md)`预计完成时间2015-06-21`
+	* [参与公关审查](Project/review-pr.md)`翻译：王辉 未校译`
+	* [高级贡献](Project/advanced-contributing.md)`翻译：王辉 未校译`
+	* [寻求帮助](Project/get-help.md)`翻译：王辉 未校译`
+	* [编程风格指南](Project/coding-style.md)`翻译：王辉 未校译`
+	* [文档风格指南](Project/doc-style.md)`翻译：王辉 未校译`
