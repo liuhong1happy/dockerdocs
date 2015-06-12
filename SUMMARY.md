@@ -136,7 +136,7 @@
 * [贡献](Project/README.md)
 	* [首先了解README](Project/who-written-for.md)`翻译：王辉 未校译`
 	* [在Linux或者OS X上获取必要软件](Project/software-required.md)`翻译：王辉 未校译`
-	* [在Windows上获取必要软件](Project/software-required-win.md)`预计完成时间2015-06-28`
+	* [在Windows上获取必要软件](Project/software-required-win.md)`翻译：刘红 未校译`
 	* [配置Git](Project/set-up-git.md)`翻译：王辉 未校译`
 	* [配置开发环境](Project/set-up-dev-env.md)`翻译：王辉 未校译`
 	* [了解测试和测试文档](Project/test-and-docs.md)`翻译：王辉 未校译`
