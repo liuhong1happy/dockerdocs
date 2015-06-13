@@ -1,57 +1,47 @@
-# Binaries
+# 二进制安装Docker
 
-**This instruction set is meant for hackers who want to try out Docker
-on a variety of environments.**
+**本文设定为需要在不同环境下使用Docker的hacker使用。**
 
-Before following these directions, you should really check if a packaged
-version of Docker is already available for your distribution. We have
-packages for many distributions, and more keep showing up all the time!
+在阅读如下文章前，请检查系统中是否已经安装。
 
-## Check runtime dependencies
+## 检测运行时依赖
 
-To run properly, docker needs the following software to be installed at
-runtime:
+为了运行正常，Docker需要安装如下运行时环境：
 
- - iptables version 1.4 or later
- - Git version 1.7 or later
- - procps (or similar provider of a "ps" executable)
- - XZ Utils 4.9 or later
- - a [properly mounted](
+ - iptables版本1.4+
+ - Git版本1.7+
+ - procps (或相似支持ps执行的工具)
+ - XZ Utils 4.9+
+ - [properly mounted](
    https://github.com/tianon/cgroupfs-mount/blob/master/cgroupfs-mount)
    cgroupfs hierarchy (having a single, all-encompassing "cgroup" mount
    point [is](https://github.com/docker/docker/issues/2683)
    [not](https://github.com/docker/docker/issues/3485)
    [sufficient](https://github.com/docker/docker/issues/4568))
 
-## Check kernel dependencies
+## 检测内核依赖
 
-Docker in daemon mode has specific kernel requirements. For details,
-check your distribution in [*Installation*](../#installation-list).
+Docker在daemon模式有指定内核要求。 详细请阅读[*Installation*](README.md).
 
-A 3.10 Linux kernel is the minimum requirement for Docker.
-Kernels older than 3.10 lack some of the features required to run Docker
-containers. These older versions are known to have bugs which cause data loss
-and frequently panic under certain conditions.
+3.10 Linux内核是Docker最小要求。较老的版本对于Docker运行某些属性造成影响。老版本已知的bug包括数据丢失等。
 
-The latest minor version (3.x.y) of the 3.10 (or a newer maintained version)
-Linux kernel is recommended. Keeping the kernel up to date with the latest
-minor version will ensure critical kernel bugs get fixed.
+3.10(3.10.x) (或者最新维护的版本)
+Linux内核是被推荐的。让内核更新到最新版本确保内核版本带来的问题得到解决。
 
-> **Warning**:
+> **警告**:
 > Installing custom kernels and kernel packages is probably not
 > supported by your Linux distribution's vendor. Please make sure to
 > ask your vendor about Docker support first before attempting to
 > install custom kernels on your distribution.
 
-> **Warning**:
+> **警告**:
 > Installing a newer kernel might not be enough for some distributions
 > which provide packages which are too old or incompatible with
 > newer kernels.
 
-Note that Docker also has a client mode, which can run on virtually any
-Linux kernel (it even builds on OS X!).
+注意Docker也有client模式, 可以运行在任何虚拟Linux内核上 (甚至是OS X!)。
 
-## Enable AppArmor and SELinux when possible
+## 什么时候可以保证AppArmor和SELinux运行
 
 Please use AppArmor or SELinux if your Linux distribution supports
 either of the two. This helps improve security and blocks certain
@@ -74,98 +64,92 @@ exhibit unexpected behaviour.
 > vendor for the system, and might break regulations and security
 > policies in heavily regulated environments.
 
-## Get the Docker binary
+## 获得Docker二进制
 
-You can download either the latest release binary or a specific version.
-After downloading a binary file, you must set the file's execute bit to run it.
+你可以下载最新版本或者指定版本二进制。下载完成后，需要设定为可执行二进制。
 
-To set the file's execute bit on Linux and OS X:
+为了设置为可执行二进制在Linux 和 OS X上:
 
     $ chmod +x docker
 
-To get the list of stable release version numbers from Github, view the
-`docker/docker` [releases page](https://github.com/docker/docker/releases). 
+为了获得版本号从Github，请查阅[docker/docker版本页](https://github.com/docker/docker/releases)。
 
-> **Note**
+> **说明**
 >
-> 1) You can get the MD5 and SHA256 hashes by appending .md5 and .sha256 to the URLs respectively
+> 1) 你可能会获得MD5 和 SHA256 哈希码通过后缀.md5 and .sha256到URL上。
 >
-> 2) You can get the compressed binaries by appending .tgz to the URLs
+> 2) 你可以获得压缩后的二进制通过后缀.tgz到URL上。
 
-### Get the Linux binary
+### 获得Linux二进制
 
-To download the latest version for Linux, use the
-following URLs:
+为了下载最新版本，使用如下URL形式：
 
     https://get.docker.com/builds/Linux/i386/docker-latest
     
     https://get.docker.com/builds/Linux/x86_64/docker-latest
 
-To download a specific version for Linux, use the
-following URL patterns:
+为了下载指定Docker版本，使用如下URL形式:
 
     https://get.docker.com/builds/Linux/i386/docker-<version>
     
     https://get.docker.com/builds/Linux/x86_64/docker-<version>
 
-For example:
+例如:
 
     https://get.docker.com/builds/Linux/i386/docker-1.6.0
 
     https://get.docker.com/builds/Linux/x86_64/docker-1.6.0
 
 
-### Get the Mac OS X binary
+### 获得Mac OS X 二进制
 
-The Mac OS X binary is only a client. You cannot use it to run the `docker`
-daemon. To download the latest version for Mac OS X, use the following URLs:
+二进制不仅是一个客户端，你还可以让它运行 `docker` daemon。为了下载最新版本，使用如下URL形式：
 
     https://get.docker.com/builds/Darwin/i386/docker-latest
     
     https://get.docker.com/builds/Darwin/x86_64/docker-latest
 
-To download a specific version for Mac OS X, use the
-following URL patterns:
+为了下载指定Docker版本，使用如下URL形式:
 
     https://get.docker.com/builds/Darwin/i386/docker-<version>
     
     https://get.docker.com/builds/Darwin/x86_64/docker-<version>
 
-For example:
+例如:
 
     https://get.docker.com/builds/Darwin/i386/docker-1.6.0
 
     https://get.docker.com/builds/Darwin/x86_64/docker-1.6.0
 
-### Get the Windows binary
+### 获得Windows二进制
  
-You can only download the Windows client binary for version `1.6.0` onwards.
-Moreover, the binary is only a client, you cannot use it to run the `docker` daemon.
-To download the latest version for Windows, use the following URLs:
+Windows客户端二进制 仅仅可以下载 `1.6.0` 及其以后的版本。
+二进制不仅是一个客户端，你还可以让它运行 `docker` daemon。
+为了下载最新版本，使用如下URL形式：
 
     https://get.docker.com/builds/Windows/i386/docker-latest.exe
     
     https://get.docker.com/builds/Windows/x86_64/docker-latest.exe
 
-To download a specific version for Windows, use the following URL pattern:
+为了下载指定Docker版本，使用如下URL形式:
 
     https://get.docker.com/builds/Windows/i386/docker-<version>.exe
     
     https://get.docker.com/builds/Windows/x86_64/docker-<version>.exe
 
-For example:
+例如:
 
     https://get.docker.com/builds/Windows/i386/docker-1.6.0.exe
 
     https://get.docker.com/builds/Windows/x86_64/docker-1.6.0.exe
 
 
-## Run the Docker daemon
+## 运行Docker daemon
 
     # start the docker in daemon mode from the directory you unpacked
     $ sudo ./docker -d &
 
-## Giving non-root access
+## 获得非root权限
 
 The `docker` daemon always runs as the root user, and the `docker`
 daemon binds to a Unix socket instead of a TCP port. By default that
@@ -184,16 +168,16 @@ need to add `sudo` to all the client commands.
 > see [*Docker Daemon Attack Surface*](
 > /articles/security/#docker-daemon-attack-surface) details.
 
-## Upgrades
+## 更新
 
-To upgrade your manual installation of Docker, first kill the docker
+为了手动更新Docker, 首先需要kill docker
 daemon:
 
     $ killall docker
 
-Then follow the regular installation steps.
+接下来就按照如上所说的安装步骤。
 
-## Run your first container!
+## 运行你的第一个container!
 
     # check your docker version
     $ sudo ./docker version
@@ -201,4 +185,4 @@ Then follow the regular installation steps.
     # run a container and open an interactive shell in the container
     $ sudo ./docker run -i -t ubuntu /bin/bash
 
-Continue with the [User Guide](/userguide/).
+继续阅读 [用户指南](../UserGuide/README.md).
