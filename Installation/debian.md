@@ -1,136 +1,113 @@
-page_title: Installation on Debian
-page_description: Instructions for installing Docker on Debian.
-page_keywords: Docker, Docker documentation, installation, debian
+# Debian环境下安装Docker
 
-# Debian
-
-Docker is supported on the following versions of Debian:
+Docker支持如下Debian版本:
 
  - [*Debian 8.0 Jessie (64-bit)*](#debian-jessie-80-64-bit)
  - [*Debian 7.7 Wheezy (64-bit)*](#debian-wheezystable-7x-64-bit)
 
 ## Debian Jessie 8.0 (64-bit)
 
-Debian 8 comes with a 3.16.0 Linux kernel, the `docker.io` package can be found in the `jessie-backports` repository. Reasoning behind this can be found <a href="https://lists.debian.org/debian-release/2015/03/msg00685.html" target="_blank">here</a>. Instructions how to enable the backports repository can be found <a href="http://backports.debian.org/Instructions/" target="_blank">here</a>.
+Debian 8带有3.16.0 Linux内核, `docker.io` 包 可以在 `jessie-backports` 软件包中发现。 其背后的原因请点击<a href="https://lists.debian.org/debian-release/2015/03/msg00685.html" target="_blank">这里</a>。 介绍怎样补丁库有效请点击 <a href="http://backports.debian.org/Instructions/" target="_blank">这里</a>。
 
 > **Note**:
-> Debian contains a much older KDE3/GNOME2 package called ``docker``, so the
-> package and the executable are called ``docker.io``.
+> Debian包含许多老的KDE3/GNOME2包，叫``docker``,因此
+> 其执行包叫做``docker.io``.
 
-### Installation
+### 安装
 
-Make sure you enabled the `jessie-backports` repository, as stated above.
+确保`jessie-backports`软件包可用, 阅读上文。
 
-To install the latest Debian package (may not be the latest Docker release):
+为了安装最新 Debian 上的包 (可能不是最新的Docker版本):
 
     $ sudo apt-get update
     $ sudo apt-get install docker.io
 
-To verify that everything has worked as expected:
+验证工作是否成功:
 
     $ sudo docker run --rm hello-world
 
-This command downloads and runs the `hello-world` image in a container. When the
-container runs, it prints an informational message. Then, it exits.
+这个命令将下载 `hello-world` 镜像运行为一个容器。当容器运行它将打印信息。随后停止。
 
-> **Note**:
-> If you want to enable memory and swap accounting see
-> [this](/installation/ubuntulinux/#memory-and-swap-accounting).
+> **说明**:
+> 如果你想确保memory和swap计数可用请点击
+> [这里](/installation/ubuntulinux/#memory-and-swap-accounting).
 
-### Uninstallation
+### 卸载
 
-To uninstall the Docker package:
+为了卸载Docker包:
 
     $ sudo apt-get purge docker-io
 
-To uninstall the Docker package and dependencies that are no longer needed:
+为了永久卸载Docker及其依赖包，你应该这样:
 
     $ sudo apt-get autoremove --purge docker-io
 
-The above commands will not remove images, containers, volumes, or user created
-configuration files on your host. If you wish to delete all images, containers,
-and volumes run the following command:
+命令将不会移除镜像，容器，数据卷,或者用户创建的配置文件。如果你希望删除所有镜像，容器，数据卷 ，运行如下命令:
 
     $ rm -rf /var/lib/docker
 
-You must delete the user created configuration files manually.
+你必须手动删除用户创建的配置项。
 
 ## Debian Wheezy/Stable 7.x (64-bit)
 
-Docker requires Kernel 3.8+, while Wheezy ships with Kernel 3.2 (for more details
-on why 3.8 is required, see discussion on
-[bug #407](https://github.com/docker/docker/issues/407)).
+Docker要求Kernel 3.8+,当Wheezy携带Kernel 3.2 (为了了解更多为什么要使用3.8+内核，请阅读
+[bug #407](https://github.com/docker/docker/issues/407))。
 
-Fortunately, wheezy-backports currently has [Kernel 3.16
+幸运的是, wheezy-backports 目前有[Kernel 3.16
 ](https://packages.debian.org/search?suite=wheezy-backports&section=all&arch=any&searchon=names&keywords=linux-image-amd64),
-which is officially supported by Docker.
+该版本正式支持Docker。
 
 ### Installation
 
-1. Install Kernel from wheezy-backports
+1. 从wheezy-backports安装内核
 
-    Add the following line to your `/etc/apt/sources.list`
+    在文件 `/etc/apt/sources.list`中添加如下行
 
     `deb http://http.debian.net/debian wheezy-backports main`
 
-    then install the `linux-image-amd64` package (note the use of
+    然后安装`linux-image-amd64`包 (注意使用
     `-t wheezy-backports`)
 
         $ sudo apt-get update
         $ sudo apt-get install -t wheezy-backports linux-image-amd64
 
-2. Restart your system. This is necessary for Debian to use your new kernel.
+2. 重启你的系统。对于Debian来说使用新内核是必要的。
 
-3. Install Docker using the get.docker.com script:
+3. 安装Docker，使用get.docker.com 的脚本:
 
     `curl -sSL https://get.docker.com/ | sh`
 
->**Note**: If your company is behind a filtering proxy, you may find that the
->`apt-key`
->command fails for the Docker repo during installation. To work around this,
->add the key directly using the following:
->
->       $ wget -qO- https://get.docker.com/gpg | sudo apt-key add -
+### 卸载
 
-### Uninstallation
-
-To uninstall the Docker package:
+为了卸载Docker包:
 
     $ sudo apt-get purge lxc-docker
 
-To uninstall the Docker package and dependencies that are no longer needed:
+为了永久卸载Docker及其依赖包，你应该这样:
 
     $ sudo apt-get autoremove --purge lxc-docker
 
-The above commands will not remove images, containers, volumes, or user created
-configuration files on your host. If you wish to delete all images, containers,
-and volumes run the following command:
+命令将不会移除镜像，容器，数据卷,或者用户创建的配置文件。如果你希望删除所有镜像，容器，数据卷 ，运行如下命令:
 
     $ rm -rf /var/lib/docker
 
-You must delete the user created configuration files manually.
+你必须手动删除用户创建的配置项。
 
-## Giving non-root access
+## 获得非root权限
 
-The `docker` daemon always runs as the `root` user and the `docker`
-daemon binds to a Unix socket instead of a TCP port. By default that
-Unix socket is owned by the user `root`, and so, by default, you can
-access it with `sudo`.
+`docker` daemon总是运行在root账户, `docker`
+daemon 绑定一个Unix socket 替代TCP端口. 默认情况
+Unix socket被账户*root*所拥有, 因此你需要取得操作权限，通过添加`sudo`。
 
-If you (or your Docker installer) create a Unix group called `docker`
-and add users to it, then the `docker` daemon will make the ownership of
-the Unix socket read/writable by the `docker` group when the daemon
-starts. The `docker` daemon must always run as the root user, but if you
-run the `docker` client as a user in the `docker` group then you don't
-need to add `sudo` to all the client commands. From Docker 0.9.0 you can
-use the `-G` flag to specify an alternative group.
+如果你或者Docker安装者创建了一个Unix group 叫 *docker*
+并向它添加账户,然后`docker` daemon将会确保其Unix socket被*docker* 组所读写，当daemon启动时。 `docker` daemon必须一直运行在root账户, 除非你运行的是`docker` client ，作为*docker*组的用户你不需要为所有的客户端命令添加`sudo`。
 
-> **Warning**:
-> The `docker` group (or the group specified with the `-G` flag) is
-> `root`-equivalent; see [*Docker Daemon Attack Surface*](
-> /articles/security/#docker-daemon-attack-surface) details.
+> **警告**: 
+> *docker* 组 (或者指定组使用`-G`)是root等价的;
+> 阅读[*Docker Daemon Attack Surface*](../Articles/security.md#docker-daemon-attack-surface)详细说明。
 
-**Example:**
+
+**例如:**
 
     # Add the docker group if it doesn't already exist.
     $ sudo groupadd docker
@@ -145,6 +122,6 @@ use the `-G` flag to specify an alternative group.
     $ sudo service docker restart
 
 
-## What next?
+## 下一步
 
-Continue with the [User Guide](/userguide/).
+继续阅读 [用户指南](../UserGuide/README.md)。

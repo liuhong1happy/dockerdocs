@@ -151,22 +151,16 @@ Windows客户端二进制 仅仅可以下载 `1.6.0` 及其以后的版本。
 
 ## 获得非root权限
 
-The `docker` daemon always runs as the root user, and the `docker`
-daemon binds to a Unix socket instead of a TCP port. By default that
-Unix socket is owned by the user *root*, and so, by default, you can
-access it with `sudo`.
+`docker` daemon总是运行在root账户, `docker`
+daemon 绑定一个Unix socket 替代TCP端口. 默认情况
+Unix socket被账户*root*所拥有, 因此你需要取得操作权限，通过添加`sudo`。
 
-If you (or your Docker installer) create a Unix group called *docker*
-and add users to it, then the `docker` daemon will make the ownership of
-the Unix socket read/writable by the *docker* group when the daemon
-starts. The `docker` daemon must always run as the root user, but if you
-run the `docker` client as a user in the *docker* group then you don't
-need to add `sudo` to all the client commands.
+如果你或者Docker安装者创建了一个Unix group 叫 *docker*
+并向它添加账户,然后`docker` daemon将会确保其Unix socket被*docker* 组所读写，当daemon启动时。 `docker` daemon必须一直运行在root账户, 除非你运行的是`docker` client ，作为*docker*组的用户你不需要为所有的客户端命令添加`sudo`。
 
-> **Warning**: 
-> The *docker* group (or the group specified with `-G`) is root-equivalent;
-> see [*Docker Daemon Attack Surface*](
-> /articles/security/#docker-daemon-attack-surface) details.
+> **警告**: 
+> *docker* 组 (或者指定组使用`-G`)是root等价的;
+> 阅读[*Docker Daemon Attack Surface*](../Articles/security.md#docker-daemon-attack-surface)详细说明。
 
 ## 更新
 
