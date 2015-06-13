@@ -19,12 +19,12 @@
     * [Debian](Installation/debian.md)`翻译：刘红 未校译`
     * [Fedora](Installation/fedora.md)`翻译：刘红 未校译`
     * [FrungalWare](Installation/frugalware.md)`预计完成时间2015-07-14`
-    * [Google Cloud Platform](Installation/google.md)`预计完成时间2015-07-14`
+    * [Google Cloud Platform](Installation/google.md)`翻译：刘红 未校译`
     * [Gentoo](Installation/geetoolinux.md)`预计完成时间2015-07-14`
-    * [IBM Softlayer](Installation/softlayer.md)`预计完成时间2015-07-14`
-    * [Joyent Compute Service](Installation/joyent.md)`预计完成时间2015-07-21`
-    * [Microsoft Azure](Installation/azure.md)`预计完成时间2015-07-21`
-    * [Rackspace Cloud](Installation/rackspace.md)`预计完成时间2015-07-21`
+    * [IBM Softlayer](Installation/softlayer.md)`翻译：刘红 未校译`
+    * [Joyent Compute Service](Installation/joyent.md)`翻译：刘红 未校译`
+    * [Microsoft Azure](Installation/azure.md)`翻译：刘红 未校译`
+    * [Rackspace Cloud](Installation/rackspace.md)`翻译：刘红 未校译`
     * [Red Hat Enterprise Linux](Installation/rhel.md)`预计完成时间2015-07-21`
     * [Oracle Linux](Installation/oracle.md)`预计完成时间2015-07-21`
     * [SUSE](Installation/suse.md)`预计完成时间2015-07-21`
