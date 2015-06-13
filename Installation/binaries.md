@@ -1,7 +1,3 @@
-page_title: Installation from binaries
-page_description: Instructions for installing Docker as a binary. Mostly meant for hackers who want to try out Docker on a variety of environments.
-page_keywords: binaries, installation, docker, documentation, linux
-
 # Binaries
 
 **This instruction set is meant for hackers who want to try out Docker
