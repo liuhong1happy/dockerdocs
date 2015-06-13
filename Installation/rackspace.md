@@ -1,26 +1,17 @@
-page_title: Installation on Rackspace Cloud
-page_description: Installation instructions for Docker on Rackspace Cloud.
-page_keywords: Rackspace Cloud, installation, docker, linux, ubuntu
-
 # Rackspace Cloud
 
-Installing Docker on Ubuntu provided by Rackspace is pretty
-straightforward, and you should mostly be able to follow the
-[*Ubuntu*](../ubuntulinux/#ubuntu-linux) installation guide.
+通过安装Ubuntu安装Docker，在Rackspace上是相当简单的, 然后继续阅读 [*Ubuntu*](ubuntulinux.md)。
 
-**However, there is one caveat:**
+**当然，这里还是有一个申明:**
 
-If you are using any Linux not already shipping with the 3.8 kernel you
-will need to install it. And this is a little more difficult on
-Rackspace.
+如果你使用任何Linux不携带有3.8内核，你将需要安装它。这是一个小小困难在Rackspace上。
 
-Rackspace boots their servers using grub's `menu.lst`
-and does not like non `virtual` packages (e.g., Xen compatible)
-kernels there, although they do work. This results in
-`update-grub` not having the expected result, and
-you will need to set the kernel manually.
+Rackspace 启动你的服务通过 grub的 `menu.lst`
+而不像非 `virtual` packages (e.g., Xen compatible)
+内核那样, 尽管他们已经起作用了. 使用
+`update-grub`的结果不会有所期待的结果,你需要手动设置内核。
 
-**Do not attempt this on a production machine!**
+**不要期望它作为生产环境的机器!**
 
     # update apt
     $ apt-get update
@@ -28,26 +19,22 @@ you will need to set the kernel manually.
     # install the new kernel
     $ apt-get install linux-generic-lts-raring
 
-Great, now you have the kernel installed in `/boot/`, next you need to
-make it boot next time.
+好了，你现在有内核安装在`/boot/`, 接下来你需要创建系统引导。
 
     # find the exact names
     $ find /boot/ -name '*3.8*'
 
     # this should return some results
 
-Now you need to manually edit `/boot/grub/menu.lst`,
-you will find a section at the bottom with the existing options. Copy
-the top one and substitute the new kernel into that. Make sure the new
-kernel is on top, and double check the kernel and initrd lines point to
-the right files.
+现在你需要手动编辑 `/boot/grub/menu.lst`,
+你将发现一个底部区域已经存在的选项，复制上边一个然后替代新的内核。 确保新的内核在上边, 双击内核kernel以及initrd 行 指向右边的文件。
 
-Take special care to double check the kernel and initrd entries.
+确保指定双击内核和initrd。
 
     # now edit /boot/grub/menu.lst
     $ vi /boot/grub/menu.lst
 
-It will probably look something like this:
+这将看到如下这样:
 
     ## ## End Default Options ##
 
@@ -66,16 +53,15 @@ It will probably look something like this:
     kernel             /boot/vmlinuz-3.2.0-38-virtual root=/dev/xvda1 ro quiet splash  single
     initrd             /boot/initrd.img-3.2.0-38-virtual
 
-Reboot the server (either via command line or console)
+重启系统
 
     # reboot
 
-Verify the kernel was updated
+指定内核被更新
 
     $ uname -a
     # Linux docker-12-04 3.8.0-19-generic #30~precise1-Ubuntu SMP Wed May 1 22:26:36 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux
 
     # nice! 3.8.
 
-Now you can finish with the [*Ubuntu*](../ubuntulinux/#ubuntu-linux)
-instructions.
+然后继续 [*Ubuntu*](ubuntulinux.md)。

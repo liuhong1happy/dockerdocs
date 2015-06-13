@@ -4,21 +4,18 @@ page_keywords: Docker, Docker documentation, installation, azure, microsoft
 
 # Microsoft Azure
 
+## 在Microsoft Azure创建一个Docker主机
 
-## Creating a Docker host machine on Azure
-
-Please check out to the following detailed tutorials on [Microsoft Azure][0]
-website to find out different ways to create a Docker-ready Linux virtual
-machines on Azure:
+请阅读如下详细教程在[Microsoft Azure][0]上，找到创建Docker预装的Linux虚拟机的不同方式:
 
 * [Docker Virtual Machine Extensions on Azure][1]
     * [How to use the Docker VM Extension from Azure Cross-Platform Interface][2]
     * [How to use the Docker VM Extension with the Azure Portal][3] 
 * [Using Docker Machine with Azure][4]
 
-## What next?
+## 下一步
 
-Continue with the [User Guide](/userguide/).
+继续阅读 [用户指南](../UserGuide/README.md)。
 
 [0]: http://azure.microsoft.com/
 [1]: http://azure.microsoft.com/en-us/documentation/articles/virtual-machines-docker-vm-extension/
