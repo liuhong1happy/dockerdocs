@@ -40,8 +40,8 @@
     * [应用客户元数据](UserGuide/labels-custom-metadata.md) `翻译：刘红 未校译`
     * [深入了解Docker Hub](UserGuide/dockerrepos.md) `翻译：刘红 未校译`
     * [Docker Compose用户指南](Compose/dockercompose.md) `翻译：刘红 未校译`
-	    * [在生产环境使用Compose](Compose/production.md)`预计完成时间2015-06-14`
-	    * [扩展Compose服务](Compose/extends.md)`预计完成时间2015-06-14`
+	    * [在生产环境使用Compose](Compose/production.md)`翻译：刘红 未校译`
+	    * [扩展Compose服务](Compose/extends.md)`翻译：刘红 未校译`
     * [Docker Machine用户指南](UserGuide/dockermachine.md) `翻译：刘红 未校译`
     * [Docker Swarm用户指南](UserGuide/dockerswarm.md) `翻译：刘红 未校译`
     * [Kitematic用户指南](Kitematic/userguide.md)`预计完成时间2015-07-05`
