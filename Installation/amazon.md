@@ -23,8 +23,8 @@
 
 默认情况下，实例中所有的输入端口都会被AWS安全组（ AWS Security Group）屏蔽，所以你在连接时可能会出现连接超时的错误。
 
-Docker安装完毕后，你就可以参考[用户指南](UserGuide)
+Docker安装完毕后，你就可以参考[用户指南](../UserGuide/README.md)
 
 ## Standard Ubuntu Installation
 
-如果你想自己动手安装Docker，你可以参照[Ubuntu安装方法](Installation/ubuntulinux.md)在你的EC2 ubuntu实例中安装。
+如果你想自己动手安装Docker，你可以参照[Ubuntu安装方法](ubuntulinux.md)在你的EC2 ubuntu实例中安装。
