@@ -15,9 +15,9 @@
     * [Arch Linux](Installation/archlinux.md)`预计完成时间2015-07-05`
     * [二进制安装](Installation/binaries.md)`翻译：刘红 未校译`
     * [CentOS](Installation/centos.md)`翻译：Shawn 未校译`
-    * [CRUX Linux](Installation/cruxlinux.md)`预计完成时间2015-07-05`
+    * [CRUX Linux](Installation/cruxlinux.md)`翻译：刘红 未校译`
     * [Debian](Installation/debian.md)`翻译：刘红 未校译`
-    * [Fedora](Installation/fedora.md)`预计完成时间2015-07-14`
+    * [Fedora](Installation/fedora.md)`翻译：刘红 未校译`
     * [FrungalWare](Installation/frugalware.md)`预计完成时间2015-07-14`
     * [Google Cloud Platform](Installation/google.md)`预计完成时间2015-07-14`
     * [Gentoo](Installation/geetoolinux.md)`预计完成时间2015-07-14`
