@@ -70,6 +70,12 @@ QQ群号 181774264 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey
 4. Docker与OpenStack整合方案：[magnum](https://github.com/openstack/magnum)
 
 
-
+## 翻译倒计时
+**安装**章节17篇未翻译
+**用户指南**章节1篇未翻译
+**DockerHub**章节3篇未翻译
+**实例**章节3篇未翻译
+**文章**章节4篇未翻译
+**参考**章节19篇未翻译
 
 
