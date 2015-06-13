@@ -17,7 +17,7 @@ Although you will be using Windows Docker client, the docker engine hosting the
 containers will still be running on Linux. Until the Docker engine for Windows
 is developed, you can launch only Linux containers from your Windows machine.
 
-![Windows Architecture Diagram](/installation/images/win_docker_host.svg)
+![Windows Architecture Diagram](../mages/win_docker_host.svg)
 
 ## Demonstration
 
@@ -30,7 +30,7 @@ is developed, you can launch only Linux containers from your Windows machine.
 2. Run the installer, which will install Docker Client for Windows, VirtualBox,
    Git for Windows (MSYS-git), the boot2docker Linux ISO, and the Boot2Docker
    management tool.
-   ![](/installation/images/windows-installer.png)
+   ![](../Images/windows-installer.png)
 3. Run the **Boot2Docker Start** shortcut from your Desktop or “Program Files →
    Boot2Docker for Windows”.
    The Start script will ask you to enter an ssh key passphrase - the simplest
@@ -40,7 +40,7 @@ is developed, you can launch only Linux containers from your Windows machine.
    Docker running inside the virtual machine. Run `docker version` to see
    if it is working correctly:
 
-![](/installation/images/windows-boot2docker-start.png)
+![](../mages/windows-boot2docker-start.png)
 
 ## Running Docker
 
@@ -72,7 +72,7 @@ exist.) Then copy the instructions for cmd.exe to set the environment variables
 to your console window and you are ready to run docker commands such as
 `docker ps`:
 
-![](/installation/images/windows-boot2docker-cmd.png)
+![](../mages/windows-boot2docker-cmd.png)
 
 ## Using Docker from PowerShell
 
@@ -84,7 +84,7 @@ and after running `boot2docker start` command it will print PowerShell commands
 to set the environment variables to connect Docker running inside VM. Run these
 commands and you are ready to run docker commands such as `docker ps`:
 
-![](/installation/images/windows-boot2docker-powershell.png)
+![](../mages/windows-boot2docker-powershell.png)
 
 > NOTE: You can alternatively run `boot2docker shellinit | Invoke-Expression`
 > command to set the environment variables instead of copying and pasting on
