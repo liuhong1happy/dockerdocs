@@ -17,7 +17,7 @@ Although you will be using Windows Docker client, the docker engine hosting the
 containers will still be running on Linux. Until the Docker engine for Windows
 is developed, you can launch only Linux containers from your Windows machine.
 
-![Windows Architecture Diagram](../mages/win_docker_host.svg)
+![Windows Architecture Diagram](../Images/win_docker_host.svg)
 
 ## Demonstration
 
@@ -40,7 +40,7 @@ is developed, you can launch only Linux containers from your Windows machine.
    Docker running inside the virtual machine. Run `docker version` to see
    if it is working correctly:
 
-![](../mages/windows-boot2docker-start.png)
+![](../Images/windows-boot2docker-start.png)
 
 ## Running Docker
 
@@ -72,7 +72,7 @@ exist.) Then copy the instructions for cmd.exe to set the environment variables
 to your console window and you are ready to run docker commands such as
 `docker ps`:
 
-![](../mages/windows-boot2docker-cmd.png)
+![](../Images/windows-boot2docker-cmd.png)
 
 ## Using Docker from PowerShell
 
@@ -84,7 +84,7 @@ and after running `boot2docker start` command it will print PowerShell commands
 to set the environment variables to connect Docker running inside VM. Run these
 commands and you are ready to run docker commands such as `docker ps`:
 
-![](../mages/windows-boot2docker-powershell.png)
+![](../Images/windows-boot2docker-powershell.png)
 
 > NOTE: You can alternatively run `boot2docker shellinit | Invoke-Expression`
 > command to set the environment variables instead of copying and pasting on
