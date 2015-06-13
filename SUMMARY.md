@@ -11,7 +11,7 @@
     * [Mac OS X](Installation/mac.md)`翻译：黄土高坡 未校译`
     * [Kitematic on Mac OS X](Kitematic/install.md)`翻译：刘红 未校译`
     * [Microsoft Windows](Installation/windows.md)`预计完成时间2015-07-05`
-    * [Amazon EC2](Installation/amazon.md)`预计完成时间2015-07-05`
+    * [Amazon EC2](Installation/amazon.md)`翻译：王辉 未校译`
     * [Arch Linux](Installation/archlinux.md)`预计完成时间2015-07-05`
     * [二进制安装](Installation/binaries.md)`翻译：刘红 未校译`
     * [CentOS](Installation/centos.md)`翻译：Shawn 未校译`
