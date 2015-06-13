@@ -72,7 +72,7 @@ QQ群号 181774264 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey
 
 ## 翻译倒计时
 
-**安装**章节17篇未翻译
+**安装**章节8篇未翻译
 
 **用户指南**章节1篇未翻译
 
