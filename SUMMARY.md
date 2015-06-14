@@ -74,8 +74,8 @@
 	* [使用Compose搭建Rails环境](Examples/compose_rails.md) `翻译：刘红 未校译`
 	* [使用Compose搭建WordPress应用](Examples/compose_wordpress.md) `翻译：刘红 未校译`
 	* [Kitematic教程:安装Minecraft服务](Kitematic/minecraft-server.md)`预计完成时间2015-07-05`
-	* [Kitematic教程:Docker化Nginx服务](Kitematic/minecraft-server.md)`预计完成时间2015-07-05`
-	* [Kitematic教程:Docker化RethinkDB服务](Kitematic/minecraft-server.md)`预计完成时间2015-07-05`
+	* [Kitematic教程:Docker化Nginx服务](Kitematic/nginx-web-server.md)`预计完成时间2015-07-05`
+	* [Kitematic教程:Docker化RethinkDB服务](Kitematic/rethinkdb-dev-database.md)`预计完成时间2015-07-05`
 * [文章](Articles/README.md)
 	* [Docker基本操作](Articles/basics.md) `翻译：刘红 未校译`
 	* [Docker网络](Articles/networking.md)`翻译：罗玉林 未校译`
