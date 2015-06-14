@@ -93,8 +93,8 @@
 	* [使用Chef配置管理](Articles/chef.md) `翻译：刘红 未校译`
 	* [使用PowerShell DSC配置管理](Articles/dsc.md) `翻译：刘红 未校译`
 	* [跨主机连接容器-ambassador容器](Articles/ambassador_pattern_linking.md) `翻译：刘红 未校译`
-	* [运行时规律](Articles/runmetrics.md)`预计完成时间2015-06-14`
-	* [增加一个Boot2Docker数据卷](Articles/b2d_volume_resize.md)`预计完成时间2015-06-14`
+	* [运行时规律](Articles/runmetrics.md)`翻译：刘红 未校译`
+	* [增加一个Boot2Docker数据卷](Articles/b2d_volume_resize.md)`翻译：刘红 未校译`
 	* [使用Systemd控制和配置Docker](Articles/systemd.md) `翻译：刘红 未校译`
 * [参考](Reference/README.md)
 	* [Docker命令行(一)](Reference/commandline/cli-1.md)`翻译：刘红 未校译`
