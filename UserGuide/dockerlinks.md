@@ -95,7 +95,7 @@
 
 接下来，查看你链接的container，通过docker inspect：
 
-    $ sudo docker inspect -f "{{ .HostConfig.Links }}" web[/db:/web/db]
+    $ sudo docker inspect -f "{{HostConfig.Links }}" web[/db:/web/db]
 
 你可以看到web container有现有链接web/db链接到db container。它允许有权限查看关于db container 的信息。
 
