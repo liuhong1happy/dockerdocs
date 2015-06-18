@@ -13,4 +13,6 @@
 * [在Debian上安装Docker](debian.md)
 * [在Fedoras上安装Docker](fedora.md)
 * [在Frugalware上安装Docker](frugalware.md)
+* [在Google Cloud Platform上安装Docker](google cloud platform.md)
+* [在Gentoo上安装Docker](gentoo.md)
 * [安装Docker Compose](compose.md)

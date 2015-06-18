@@ -37,4 +37,6 @@ $ sudo systemctl enable lxc-docker
 
 ## 守护进程(daemon)的一些设置
 
-如果你需要一个http的代理，可以在docker运行时指定不同的目录或分区，如果你先要一些其它的自定义，请查看 [customize your systemd Docker daemon options](https://docs.docker.com/articles/systemd/)
+如果需要一个http的代理，可以在docker运行时指定不同的目录或分区或一些其它的自定义，请查看 [customize your systemd Docker daemon options](https://docs.docker.com/articles/systemd/)
+
+原文地址：https://docs.docker.com/v1.5/installation/frugalware/
