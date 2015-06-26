@@ -11,16 +11,17 @@
     * [Mac OS X](Installation/mac.md)`翻译：黄土高坡 未校译`
     * [Kitematic on Mac OS X](Kitematic/install.md)`翻译：刘红 未校译`
     * [Microsoft Windows](Installation/windows.md)`预计完成时间2015-07-05`
+    * [Windows下Docker Client测试](Installation/testing-windows-docker-client.md)`预计完成时间2015-07-05`
     * [Amazon EC2](Installation/amazon.md)`翻译：王辉 未校译`
-    * [Arch Linux](Installation/archlinux.md)`预计完成时间2015-07-05`
+    * [Arch Linux](Installation/archlinux.md)`翻译：王辉 未校译`
     * [二进制安装](Installation/binaries.md)`翻译：刘红 未校译`
     * [CentOS](Installation/centos.md)`翻译：Shawn 未校译`
     * [CRUX Linux](Installation/cruxlinux.md)`翻译：刘红 未校译`
     * [Debian](Installation/debian.md)`翻译：刘红 未校译`
     * [Fedora](Installation/fedora.md)`翻译：刘红 未校译`
-    * [FrungalWare](Installation/frugalware.md)`预计完成时间2015-07-14`
-    * [Google Cloud Platform](Installation/google.md)`翻译：刘红 未校译`
-    * [Gentoo](Installation/geetoolinux.md)`预计完成时间2015-07-14`
+    * [FrungalWare](Installation/frugalware.md)`翻译：王辉 未校译`
+    * [Google Cloud Platform](Installation/google.md)`翻译：王辉 未校译`
+    * [Gentoo](Installation/geetoolinux.md)`翻译：王辉 未校译`
     * [IBM Softlayer](Installation/softlayer.md)`翻译：刘红 未校译`
     * [Joyent Compute Service](Installation/joyent.md)`翻译：刘红 未校译`
     * [Microsoft Azure](Installation/azure.md)`翻译：刘红 未校译`
