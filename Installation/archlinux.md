@@ -1,79 +1,46 @@
-page_title: Installation on Arch Linux
-page_description: Installation instructions for Docker on ArchLinux.
-page_keywords: arch linux, virtualization, docker, documentation, installation
+#  Arch Linux
 
-# Arch Linux
+在 Arch Linux 上安装Docker可以通过package的方式，有如下两种package：
+- [Arch Linux社区安装包](https://www.archlinux.org/packages/community/x86_64/docker/)
+- AUR 安装包 [docker-git](https://aur.archlinux.org/packages/docker-git/)
 
-Installing on Arch Linux can be handled via the package in community:
+第一种方式会安装最新版本的Docker，而第二中方式是直接从Docker master分支build
 
- - [docker](https://www.archlinux.org/packages/community/x86_64/docker/)
+## 依赖关系
 
-or the following AUR package:
+Docker核心的依赖包如下：
+- bridge-utils
+- device-mapper
+- iproute2
+- lxc
+- sqlite
 
- - [docker-git](https://aur.archlinux.org/packages/docker-git/)
+## 安装
 
-The docker package will install the latest tagged version of docker. The
-docker-git package will build from the current master branch.
+如果采用的是上面第一种方式的package，执行如下安装命令：
+```
+pacman -S docker
+```
 
-## Dependencies
+如果是AUR的方式，就执行下面的命令：
+```
+yaourt -S docker-git
+```
+> 这种情况默认是你已经安装了**yaourt**,如果没有安装，可以查看这篇文章：[Arch User Repository](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages)
 
-Docker depends on several packages which are specified as dependencies
-in the packages. The core dependencies are:
 
- - bridge-utils
- - device-mapper
- - iproute2
- - lxc
- - sqlite
+## 运行Docker
 
-## Installation
+Docker在运行之前会是一个Systemd形式的服务，现在执行下面的命令来运行我们的Docker吧：
+```
+$ sudo systemctl start docker
+```
 
-For the normal package a simple
+还可以让Docker开机自启：
+```
+$ sudo systemctl enable docker
+```
 
-    $ sudo pacman -S docker
+## 守护进程(daemon)的一些设置
 
-is all that is needed.
-
-For the AUR package execute:
-
-    $ sudo yaourt -S docker-git
-
-The instructions here assume **yaourt** is installed. See [Arch User
-Repository](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages)
-for information on building and installing packages from the AUR if you
-have not done so before.
-
-## Starting Docker
-
-There is a systemd service unit created for docker. To start the docker
-service:
-
-    $ sudo systemctl start docker
-
-To start on system boot:
-
-    $ sudo systemctl enable docker
-
-## Custom daemon options
-
-If you need to add an HTTP Proxy, set a different directory or partition for the
-Docker runtime files, or make other customizations, read our systemd article to
-learn how to [customize your systemd Docker daemon options](/articles/systemd/).
-
-## Uninstallation
-
-To uninstall the Docker package:
-
-    $ sudo pacman -R docker
-
-To uninstall the Docker package and dependencies that are no longer needed:
-
-    $ sudo pacman -Rns docker
-
-The above commands will not remove images, containers, volumes, or user created
-configuration files on your host. If you wish to delete all images, containers,
-and volumes run the following command:
-
-    $ rm -rf /var/lib/docker
-
-You must delete the user created configuration files manually.
+如果你需要一个http的代理，可以在docker运行时指定不同的目录或分区，如果你先要一些其它的自定义，请查看 [customize your systemd Docker daemon options](https://docs.docker.com/articles/systemd/)
