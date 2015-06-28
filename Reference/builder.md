@@ -50,4 +50,17 @@ Dockerfile的语法类似如下：
 	# Comment
 	INSTRUCTION arguments
 
-指令不区分大小写，但让
+指令不区分大小写，约定俗成为大写，以便更容易和参数区分。
+
+Docker 按顺序执行Dockerfile中的指令。第一条指令必须是FROM，为了指定[基础镜像](http://beta-docs.docker.io/terms/image/#base-image)。
+
+Docker将使用#号注释，一个#可以在任何地方标记甚至是在参数的后边：
+
+	# Comment
+	RUN echo 'we are running some # of cool things'
+
+## 环境替换 ##
+
+> 说明：在1.3版本以前，Dockerfile环境变量是被类似操作的，他们可以按照如下方式替换。但是，没有正式指令定义环境变量替换。1.3版本过后，这中行为保留并升华。
+
+环境变量（使用ENV语句声明）可以被使用在某次指令集中，作为变量被Dockerfile解析。
