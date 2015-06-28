@@ -1,161 +1,139 @@
 
 # Windows
-> **Note:**
-> Docker has been tested on Windows 7 and 8.1; it may also run on older versions.
-> Your processor needs to support hardware virtualization.
+> **注意:**
+> Docker已经在Windows 7和8.1上测试通过；在低版本Windows上也能运行。
+> 不过需要你的处理器支持硬件虚拟化。
 
-The Docker Engine uses Linux-specific kernel features, so to run it on Windows
-we need to use a lightweight virtual machine (VM).  You use the **Windows Docker
-Client** to control the virtualized Docker Engine to build, run, and manage
-Docker containers.
+Docker引擎使用的Linux内核特性，所以在Windows上运行，我们需要使用一个轻量级
+的虚拟机。你可以使用**Windows Docker Client**控制虚拟化Docker引擎，来编译，运行和管理Docker容器。
 
-To make this process easier, we've designed a helper application called
-[Boot2Docker](https://github.com/boot2docker/boot2docker) creates a Linux virtual
-machine on Windows to run Docker on a Linux operating system.
+为了简化这个过程，我们设计了一个叫[Boot2Docker](https://github.com/boot2docker/boot2docker)的帮助应用
+来在Windows上创建Linux虚拟机，以便在Linux操作系统上运行Docker。
 
-Although you will be using Windows Docker client, the docker engine hosting the
-containers will still be running on Linux. Until the Docker engine for Windows
-is developed, you can launch only Linux containers from your Windows machine.
+尽管你使用的是Windows上的Docker客户端，包含容器的docker引擎依然运行在Linux上。现在你只能在Windows机器
+上启动Linux容器，除非Windows上的docker引擎开发完成。
 
-![Windows Architecture Diagram](../Images/win_docker_host.svg)
 
-## Demonstration
+
+![Windows 体系结构](../Images/win_docker_host.png)
+## 示范
 
 <iframe width="640" height="480" src="//www.youtube.com/embed/TjMU3bDX4vo?rel=0" frameborder="0" allowfullscreen></iframe>
+（译者注：示例在youtube上，此处观看需翻墙。地址：www.youtube.com/embed/TjMU3bDX4vo?rel=0）
 
-## Installation
+## 安装
 
-1. Download the latest release of the
-   [Docker for Windows Installer](https://github.com/boot2docker/windows-installer/releases/latest).
-2. Run the installer, which will install Docker Client for Windows, VirtualBox,
-   Git for Windows (MSYS-git), the boot2docker Linux ISO, and the Boot2Docker
-   management tool.
+
+1. 下载[Docker for Windows Installer](https://github.com/boot2docker/windows-installer/releases/latest)的最新版本（译者注：下载需翻墙）。
+2. 运行安装程序，会安装Windows Docker客户端，VirtualBox，Git for Windows (MSYS-git)，boot2docker的Linux镜像和Boot2Docker管理工具。
    ![](../Images/windows-installer.png)
-3. Run the **Boot2Docker Start** shortcut from your Desktop or “Program Files →
-   Boot2Docker for Windows”.
-   The Start script will ask you to enter an ssh key passphrase - the simplest
-   (but least secure) is to just hit [Enter].
-
-4. The **Boot2Docker Start** will start a unix shell already configured to manage
-   Docker running inside the virtual machine. Run `docker version` to see
-   if it is working correctly:
-
+3. 从你的桌面快捷方式或者“程序文件→Boot2Docker for Windows”运行**Boot2Docker Start**。
+	启动脚本会要求你输入一个ssh密钥密码-最简单的(但至少安全)是直接点击[Enter]继续。
+4. 为了管理在虚拟机中运行的Docker，**Boot2Docker Start**会启动一个已经配置好的unix shell。
+	执行 `docker version` 查看是否运行正常：
 ![](../Images/windows-boot2docker-start.png)
 
-## Running Docker
 
+## 运行 Docker
 {{ include "no-remote-sudo.md" }}
 
-**Boot2Docker Start** will automatically start a shell with environment variables
-correctly set so you can start using Docker right away:
 
-Let's try the `hello-world` example image. Run
+为了使你能立即使用上Docker,运行**Boot2Docker Start**会自动启动一个已经配置好环境变量的shell：
+
+
+让我们试一下 `hello-world` 示例镜像。运行
 
     $ docker run hello-world
 
-This should download the very small `hello-world` image and print a
-`Hello from Docker.` message.
+这会下载一个非常小的 `hello-world` 镜像并输出`Hello from Docker.`消息。
 
-## Using Docker from Windows Command Line Prompt (cmd.exe)
+## 从Windows命令提示符窗口使用Docker (cmd.exe)
 
-Launch a Windows Command Line Prompt (cmd.exe).
+启动一个Windows命令提示符窗口 (cmd.exe)。
 
-Boot2Docker command requires `ssh.exe` to be in the PATH, therefore we need to
-include `bin` folder of the Git installation (which has ssh.exe) to the `%PATH%`
-environment variable by running:
+Boot2Docker命令要求在PATH内配置`ssh.exe`路径，因此我们通过运行下面的命令，将需要的Git
+安装文件夹内的`bin`目录（有ssh.exe）添加到`％PATH％`环境变量：
 
     set PATH=%PATH%;"c:\Program Files (x86)\Git\bin"
 
-and then we can run the `boot2docker start` command to start the Boot2Docker VM.
-(Run `boot2docker init` command if you get an error saying machine does not
-exist.) Then copy the instructions for cmd.exe to set the environment variables
-to your console window and you are ready to run docker commands such as
-`docker ps`:
+然后我们可以运行 `boot2docker start` 命令来启动Boot2Docker虚拟机。
+(如果你遇到错误提示没有虚拟机，运行`boot2docker init`命令初始化虚拟机。)
+然后复制cmd.exe命令提示设置你的控制台窗口环境变量,接着你就可以运行docker命令了，如`docker ps`:
+（译者注：Windows7上给的提示是export，改成set）
 
 ![](../Images/windows-boot2docker-cmd.png)
 
-## Using Docker from PowerShell
+## 从PowerShell使用Docker
 
-Launch a PowerShell window, then you need to add `ssh.exe` to your PATH:
+启动一个PowerShell窗口，添加`ssh.exe`到你的路径：
 
     $Env:Path = "${Env:Path};c:\Program Files (x86)\Git\bin"
 
-and after running `boot2docker start` command it will print PowerShell commands
-to set the environment variables to connect Docker running inside VM. Run these
-commands and you are ready to run docker commands such as `docker ps`:
+
+在你运行`boot2docker start`命令后会打印PowerShell命令，这些命令会完成环境变量的设置
+以便连接虚拟机内运行的Docker。在运行这些命令后，你可以运行docker命令了，如`docker ps`:
+（译者注：Windows7上给的提示是export，改成set）
 
 ![](../Images/windows-boot2docker-powershell.png)
 
-> NOTE: You can alternatively run `boot2docker shellinit | Invoke-Expression`
-> command to set the environment variables instead of copying and pasting on
-> PowerShell.
 
-# Further Details
+> 注意: 你可以运行`boot2docker shellinit | Invoke-Expression`命令设置环境变量
+> 而不用在PowerShell中复制、粘帖。
 
-The Boot2Docker management tool provides several commands:
+# 更多详情
+
+Boot2Docker管理工具提供了一些命令：
 
     $ boot2docker
     Usage: boot2docker.exe [<options>] {help|init|up|ssh|save|down|poweroff|reset|restart|config|status|info|ip|shellinit|delete|download|upgrade|version} [<args>]
 
-## Upgrading
+## 升级
 
-1. Download the latest release of the [Docker for Windows Installer](
-   https://github.com/boot2docker/windows-installer/releases/latest)
-
-2. Run the installer, which will update the Boot2Docker management tool.
-
-3. To upgrade your existing virtual machine, open a terminal and run:
+1. 下载 [Docker for Windows Installer](https://github.com/boot2docker/windows-installer/releases/latest)的最新版本（译者注：下载需翻墙）。
+2. 运行安装程序，会自动更新Boot2Docker管理工具。
+3. 要升级现有的虚拟机上，打开一个终端，运行：
 
         boot2docker stop
         boot2docker download
         boot2docker start
 
-## Container port redirection
 
-If you are curious, the username for the boot2docker default user is `docker`
-and the password is `tcuser`.
+## 容器端口重定向
 
-The latest version of `boot2docker` sets up a host only network adaptor which
-provides access to the container's ports.
+如果你需要知道，boot2docker的默认用户是`docker`密码是`tcuser`。
+`boot2docker`最新版本仅设置了一个主机网络适配器，它提供了访问容器的端口。
 
-If you run a container with an exposed port:
+如果你以指定端口运行容器:
 
     docker run --rm -i -t -p 80:80 nginx
 
-Then you should be able to access that nginx server using the IP address reported
-to you using:
+然后你应该能使用你指定的端口访问nginx服务器：
 
     boot2docker ip
 
-Typically, it is 192.168.59.103, but it could get changed by Virtualbox's DHCP
-implementation.
+通常,IP地址是192.168.59.103,但它可能会因为Virtualbox的DHCP分配改变。
 
-For further information or to report issues, please see the [Boot2Docker site](http://boot2docker.io)
+如需进一步信息或报告问题,请访问[Boot2Docker网站](http://boot2docker.io)
 
-## Login with PUTTY instead of using the CMD
+## 使用PUTTY而不是CMD登录
 
-Boot2Docker generates and uses the public/private key pair in your `%USERPROFILE%\.ssh`
-directory so to log in you need to use the private key from this same directory.
+Boot2Docker会在你的`% USERPROFILE % \ . ssh`目录生成和使用公钥/私钥对，
+所以为了登录你同样需要使用这个目录的私钥。
 
-The private key needs to be converted into the format PuTTY uses.
+私钥需要转换成PuTTY使用的格式。
 
-You can do this with
-[puttygen](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html):
+你可以使用[puttygen](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)完成转换:
 
-- Open `puttygen.exe` and load ("File"->"Load" menu) the private key from
-  `%USERPROFILE%\.ssh\id_boot2docker`
-- then click: "Save Private Key".
-- Then use the saved file to login with PuTTY using `docker@127.0.0.1:2022`.
+- 打开`puttygen.exe`并从`%USERPROFILE%\.ssh\id_boot2docker`目录加载 ("File"->"Load" menu)私钥
+- 接着点击："Save Private Key".
+- 最后用保存的文件PuTTY登录`docker@127.0.0.1:2022`。
 
-## Uninstallation
+## 卸载
 
-You can uninstall Boot2Docker using Window's standard process for removing programs.
-This process does not remove the `docker-install.exe` file. You must delete that file
-yourself.
+你可以使用Windows标准卸载方式卸载Boot2Docker。但这种方式不会删除 `docker-install.exe` 文件，
+你必须手动删除此文件。
 
-## References
+## 参考资料
 
-If you have Docker hosts running and if you don't wish to do a 
-Boot2Docker installation, you can install the docker.exe using
-unofficial Windows package manager Chocolately. For information
-on how to do this, see [Docker package on Chocolatey](http://chocolatey.org/packages/docker).
+如果你想运行Docker但你不想使用Boot2Docker安装，你可以使用非官方的
+Windows包管理Chocolately安装docker.exe。更多信息请参考[Docker package on Chocolatey](http://chocolatey.org/packages/docker).
