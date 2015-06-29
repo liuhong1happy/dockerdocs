@@ -1,139 +1,121 @@
-page_title: Installation on Oracle Linux
-page_description: Installation instructions for Docker on Oracle Linux.
-page_keywords: Docker, Docker documentation, requirements, linux, rhel, centos, oracle, ol
-
 # Oracle Linux 6 and 7
 
-You do not require an Oracle Linux Support subscription to install Docker on
-Oracle Linux.
+在Oracle Linux上安装docker不需要你有Oracle Linux Support subscription。
 
-*For Oracle Linux customers with an active support subscription:*
-Docker is available in either the `ol6_x86_64_addons` or `ol7_x86_64_addons`
-channel for Oracle Linux 6 and Oracle Linux 7 on the [Unbreakable Linux Network
-(ULN)](https://linux.oracle.com).
+*对于有support subscription的Oracle linux用户来说:*
+通过[Unbreakable Linux Network
+(ULN)](https://linux.oracle.com)，无论在 Oracle Linux 6 还是 Oracle Linux 7上，Docker 在`ol6_x86_64_addons` 或者 `ol7_x86_64_addons`渠道都是可用的。
 
-*For Oracle Linux users without an active support subscription:*
-Docker is available in the appropriate `ol6_addons` or `ol7_addons` repository
-on [Oracle Public Yum](http://public-yum.oracle.com).
+*对于没有support subscription的Oracle linux用户来说:*
+Docker在 [Oracle Public Yum](http://public-yum.oracle.com)源`ol6_addons` or `ol7_addons`仓库已经可用.
 
-Docker requires the use of the Unbreakable Enterprise Kernel Release 3 (3.8.13)
-or higher on Oracle Linux. This kernel supports the Docker btrfs storage engine
-on both Oracle Linux 6 and 7.
+在Oracle Linux上Docker需要使用Unbreakable Enterprise Kernel Release 3 (3.8.13)或者更高版本。
+在Oracle Linux6和7上，这个版本的内核支持Docker btrfs存储引擎。
 
-Due to current Docker limitations, Docker is only able to run only on the x86_64
-architecture.
+因为当前Docker技术的限制，Docker只能运行在x86_64体系架构上。
 
-## To enable the *addons* channel via the Unbreakable Linux Network:
+## 在Unbreakable Linux Network启动 *addons* channel:
+1. 通过ULN web 接口启用 *ol6\_x86\_64\_addons* 或者 *ol7\_x86\_64\_addons* 渠道。
+更多信息可以在订阅频道查询[Unbreakable Linux Network User's
+Guide](http://docs.oracle.com/cd/E52668_01/E39381/html/index.html)。
 
-1. Enable either the *ol6\_x86\_64\_addons* or *ol7\_x86\_64\_addons* channel
-via the ULN web interface.
-Consult the [Unbreakable Linux Network User's
-Guide](http://docs.oracle.com/cd/E52668_01/E39381/html/index.html) for
-documentation on subscribing to channels.
+## 通过Oracle公开Yum源启用 *addons* 仓库：
 
-## To enable the *addons* repository via Oracle Public Yum:
+最新版本的Oracle Linux 6 和 7在安装过程中会自动配置使用Oracle Public Yum源。不过
+*addons* 默认没有启用。按照下面方法启用 *addons* 仓库：
+按照下面方法启用 *addons* 仓库：
 
-The latest release of Oracle Linux 6 and 7 are automatically configured to use
-the Oracle Public Yum repositories during installation. However, the *addons*
-repository is not enabled by default.
+1. 编辑 `/etc/yum.repos.d/public-yum-ol6.repo` 或者
+`/etc/yum.repos.d/public-yum-ol7.repo`配置文件，在 `[ol6_addons]` 或者 the `[ol7_addons]` 这一节，配置 `enabled=1` 。
 
-To enable the *addons* repository:
+## 安装
 
-1. Edit either `/etc/yum.repos.d/public-yum-ol6.repo` or
-`/etc/yum.repos.d/public-yum-ol7.repo`
-and set `enabled=1` in the `[ol6_addons]` or the `[ol7_addons]` stanza.
+1. 确保 *addons* 渠道或者仓库已经启用。
 
-## Installation 
-
-1. Ensure the appropriate *addons* channel or repository has been enabled.
-
-2. Use yum to install the Docker package:
+2. 使用yum安装Docker 软件包：
 
         $ sudo yum install docker
 
-## Starting Docker 
+## 启动 Docker
 
-1. Now that it's installed, start the Docker daemon:
+1. 现在Docker已经安装成功，启动Docker守护进程：
 
-    1. On Oracle Linux 6:
+    1. 在 Oracle Linux 6上：
 
             $ sudo service docker start
 
-    2. On Oracle Linux 7:
+    2. 在 Oracle Linux 7上:
 
             $ sudo systemctl start docker.service
 
-2. If you want the Docker daemon to start automatically at boot:
+2. 如果你想Docker 守护进程开机自启动：
 
-    1. On Oracle Linux 6:
+    1. 在 Oracle Linux 6上:
 
             $ sudo chkconfig docker on
 
-    2. On Oracle Linux 7:
+    2. 在 Oracle Linux 7上:
 
             $ sudo systemctl enable docker.service
 
-**Done!**
+**完成!**
 
-## Custom daemon options
+## 定制守护进程选项
 
-If you need to add an HTTP Proxy, set a different directory or partition for the
-Docker runtime files, or make other customizations, read our systemd article to
-learn how to [customize your systemd Docker daemon options](/articles/systemd/).
+如果你需要增加一个HTTP Proxy， 给Docker设置一个不同的目录或分区作为运行时的文件集，
+或者做其他的定制，请阅读我们的系统文章来学习：[customize your systemd Docker daemon options](/articles/systemd/)。
 
-## Using the btrfs storage engine
+## 使用 btrfs 存储引擎
 
-Docker on Oracle Linux 6 and 7 supports the use of the btrfs storage engine.
-Before enabling btrfs support, ensure that `/var/lib/docker` is stored on a
-btrfs-based filesystem. Review [Chapter
+在Oracle Linux 6 和 7上，Docker支持使用 btrfs 存储引擎。
+在启用 btrfs支持前，确保 `/var/lib/docker` 是存储在 btrfs-based 文件系统上的。
+
+关于如何创建并挂载 btrfs文件系统，参阅 [Chapter
 5](http://docs.oracle.com/cd/E37670_01/E37355/html/ol_btrfs.html) of the [Oracle
 Linux Administrator's Solution
-Guide](http://docs.oracle.com/cd/E37670_01/E37355/html/index.html) for details
-on how to create and mount btrfs filesystems.
+Guide](http://docs.oracle.com/cd/E37670_01/E37355/html/index.html) 了解详情。
 
-To enable btrfs support on Oracle Linux:
+在Oracle Linux启用 btrfs 支持:
 
-1. Ensure that `/var/lib/docker` is on a btrfs filesystem.
-1. Edit `/etc/sysconfig/docker` and add `-s btrfs` to the `OTHER_ARGS` field.
-2. Restart the Docker daemon:
+1. 确保 `/var/lib/docker` 是存储在 btrfs-based 文件系统上的。
+2. 编辑文件 `/etc/sysconfig/docker` 并在 `OTHER_ARGS`处增加`-s btrfs` 。
+3. 重启 Docker 守护进程:
 
-You can now continue with the [Docker User Guide](/userguide/).
+现在你可以继续看 [Docker User Guide](/userguide/) 了。
 
-## Uninstallation
+## 卸载
 
-To uninstall the Docker package:
+卸载 Docker 软件包：
 
     $ sudo yum -y remove docker
 
-The above command will not remove images, containers, volumes, or user created
-configuration files on your host. If you wish to delete all images, containers,
-and volumes run the following command:
+上面的命令不会删除你机器上的镜像，容器，卷，或者自定义的文件。如果你想要删除所有的镜像，容器
+和卷，执行下面命令：
 
     $ rm -rf /var/lib/docker
 
-You must delete the user created configuration files manually.
+你必须手动删除自定义的文件。
 
-## Known issues
+## 已知问题
 
-### Docker unmounts btrfs filesystem on shutdown
-If you're running Docker using the btrfs storage engine and you stop the Docker
-service, it will unmount the btrfs filesystem during the shutdown process. You
-should ensure the filesystem is mounted properly prior to restarting the Docker
-service.
+### Docker 关闭时会卸载 btrfs 文件系统
+如果你正在 btrfs 存储引擎上运行 Docker，当你关闭Docker服务时，在关闭过程中它会自动卸载 btrfs文件系统。
+在你重启 Docker 服务时，你必须确保文件系统已经提前挂载好。
 
 On Oracle Linux 7, you can use a `systemd.mount` definition and modify the
 Docker `systemd.service` to depend on the btrfs mount defined in systemd.
+在 Oracle Linux 7上，你可以利用 `systemd.mount` 定义并修改 Docker 的 `systemd.service`文件，
+解决在systemd中定义的 btrfs 挂载依赖问题。
 
-### SElinux support on Oracle Linux 7
-SElinux must be set to `Permissive` or `Disabled` in `/etc/sysconfig/selinux` to
-use the btrfs storage engine on Oracle Linux 7.
+### Oracle Linux 7上SElinux 支持
+在Oracle Linux 7上，使用 btrfs 存储引擎时，`/etc/sysconfig/selinux`中
+SElinux必须设置为`Permissive` 或 `Disabled` 。
 
-## Further issues?
+## 更多问题？
 
-If you have a current Basic or Premier Support Subscription for Oracle Linux,
-you can report any issues you have with the installation of Docker via a Service
-Request at [My Oracle Support](http://support.oracle.com).
+如果你有Oracle Linux的 current Basic 或者 Premier支持订阅，那么在[My Oracle Support](http://support.oracle.com)上，你可以提交任何关于Docker安装过程中遇到的问题的服务请求.
 
-If you do not have an Oracle Linux Support Subscription, you can use the [Oracle
+If you do not have an Oracle Linux Support Subscription, you can use the
+如果你没有Oracle Linux 支持订阅，你可以使用 [Oracle
 Linux
-Forum](https://community.oracle.com/community/server_%26_storage_systems/linux/oracle_linux) for community-based support.
+Forum](https://community.oracle.com/community/server_%26_storage_systems/linux/oracle_linux) 获得社区的帮助.
