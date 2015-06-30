@@ -1,18 +1,12 @@
-page_title: Installation on openSUSE and SUSE Linux Enterprise
-page_description: Installation instructions for Docker on openSUSE and on SUSE Linux Enterprise.
-page_keywords: openSUSE, SUSE Linux Enterprise, SUSE, SLE, docker, documentation, installation
-
 # openSUSE
 
-Docker is available in **openSUSE 12.3 and later**. Please note that due
-to its current limitations Docker is able to run only **64 bit** architecture.
+Docker 在 **openSUSE 12.3 及以后** 都可用。但是请注意，基于当前Docker技术的限制，Docker只能运行在 **64位** 的系统上。
 
-Docker is not part of the official repositories of openSUSE 12.3 and
-openSUSE 13.1. Hence  it is necessary to add the [Virtualization
-repository](https://build.opensuse.org/project/show/Virtualization) from
-[OBS](https://build.opensuse.org/) to install the `docker` package.
+在 openSUSE 12.3 和 openSUSE 13.1版本中，Docker不是官方默认的源。
+因此为了安装 docker 软件包，必须从[OBS](https://build.opensuse.org/)
+中添加[Virtualization repository](https://build.opensuse.org/project/show/Virtualization)。
 
-Execute one of the following commands to add the Virtualization repository:
+执行下面任一命令添加虚拟化仓库：
 
     # openSUSE 12.3
     $ sudo zypper ar -f http://download.opensuse.org/repositories/Virtualization/openSUSE_12.3/ Virtualization
@@ -20,77 +14,70 @@ Execute one of the following commands to add the Virtualization repository:
     # openSUSE 13.1
     $ sudo zypper ar -f http://download.opensuse.org/repositories/Virtualization/openSUSE_13.1/ Virtualization
 
-No extra repository is required for openSUSE 13.2 and later.
+openSUSE 13.2 及以后版本不需要额外的仓库。
 
 # SUSE Linux Enterprise
 
-Docker is available in **SUSE Linux Enterprise 12 and later**. Please note that
-due to its current limitations Docker is able to run only on **64 bit**
-architecture.
+Docker 在 **SUSE Linux Enterprise 12 and later** 都可用。但是请注意，基于当前Docker技术的限制，Docker只能运行在 **64位** 的系统上。
 
-## Installation
 
-Install the Docker package.
+## 安装
+
+安装 Docker 包。
 
     $ sudo zypper in docker
 
-Now that it's installed, let's start the Docker daemon.
+现在已经安装了，让我们来启动 Docker 守护进程。
 
     $ sudo systemctl start docker
 
-If we want Docker to start at boot, we should also:
+如果我们想要Docker 开机自启动，我们应该专业：
 
     $ sudo systemctl enable docker
 
-The docker package creates a new group named docker. Users, other than
-root user, need to be part of this group in order to interact with the
-Docker daemon. You can add users with:
+Docker 安装包会自动创建一个新的docker组。如果用户不是root用户，
+为了能与Docker 守护进程交互，需要将用户加入这个组。你可以像下面这样
+添加用户：
+
 
     $ sudo /usr/sbin/usermod -a -G docker <username>
 
-To verify that everything has worked as expected:
+验证是否已经像预期的那样生效：
 
     $ sudo docker run --rm -i -t opensuse /bin/bash
 
-This should download and import the `opensuse` image, and then start `bash` in
-a container. To exit the container type `exit`.
+这会下载并导入 `opensuse` 镜像，并在容器中启动 `bash`。输入 `exit`
+退出容器。
 
-If you want your containers to be able to access the external network you must
-enable the `net.ipv4.ip_forward` rule.
-This can be done using YaST by browsing to the
-`Network Devices -> Network Settings -> Routing` menu and ensuring that the
-`Enable IPv4 Forwarding` box is checked.
+如果你想你的容器可以访问外部网关，你必须启用 `net.ipv4.ip_forward` 规则。
+这可以使用YaST 完成，到`Network Devices -> Network Settings -> Routing`菜单，确保勾选`Enable IPv4 Forwarding` 。
 
-This option cannot be changed when networking is handled by the Network Manager.
-In such cases the `/etc/sysconfig/SuSEfirewall2` file needs to be edited by
-hand to ensure the `FW_ROUTE` flag is set to `yes` like so:
+如果网络是被Network Manager组件管理的，则上面的选择无法更改。在这种情况下，
+可以手动的编辑 `/etc/sysconfig/SuSEfirewall2` 文来，确保 `FW_ROUTE` 选项设置成 `yes` ，就像下面这样:
 
     FW_ROUTE="yes"
 
 
-**Done!**
+**完成!**
 
-## Custom daemon options
+## 定制守护进程选项
 
-If you need to add an HTTP Proxy, set a different directory or partition for the
-Docker runtime files, or make other customizations, read our systemd article to
-learn how to [customize your systemd Docker daemon options](/articles/systemd/).
+如果你需要增加一个HTTP Proxy， 给Docker设置一个不同的目录或分区作为运行时的文件集，
+或者做其他的定制，请阅读我们的系统文章来学习：[customize your systemd Docker daemon options](/articles/systemd/)。
 
-## Uninstallation
+## 卸载
 
-To uninstall the Docker package:
+卸载 Docker 软件包：
 
     $ sudo zypper rm docker
 
-The above command will not remove images, containers, volumes, or user created
-configuration files on your host. If you wish to delete all images, containers,
-and volumes run the following command:
+上面的命令不会删除你机器上的镜像，容器，卷，或者自定义的文件。如果你想要删除所有的镜像，容器
+和卷，执行下面命令：
 
     $ rm -rf /var/lib/docker
 
-You must delete the user created configuration files manually.
+你必须手动删除自定义的文件。
 
-## What's next
+## 下一步
 
-Continue with the [User Guide](/userguide/).
-
+继续阅读 [用户指南](../UserGuide/README.md)。
