@@ -102,8 +102,6 @@ Guide](http://docs.oracle.com/cd/E37670_01/E37355/html/index.html) 了解详情�
 如果你正在 btrfs 存储引擎上运行 Docker，当你关闭Docker服务时，在关闭过程中它会自动卸载 btrfs文件系统。
 在你重启 Docker 服务时，你必须确保文件系统已经提前挂载好。
 
-On Oracle Linux 7, you can use a `systemd.mount` definition and modify the
-Docker `systemd.service` to depend on the btrfs mount defined in systemd.
 在 Oracle Linux 7上，你可以利用 `systemd.mount` 定义并修改 Docker 的 `systemd.service`文件，
 解决在systemd中定义的 btrfs 挂载依赖问题。
 
@@ -115,7 +113,6 @@ SElinux必须设置为`Permissive` 或 `Disabled` 。
 
 如果你有Oracle Linux的 current Basic 或者 Premier支持订阅，那么在[My Oracle Support](http://support.oracle.com)上，你可以提交任何关于Docker安装过程中遇到的问题的服务请求.
 
-If you do not have an Oracle Linux Support Subscription, you can use the
 如果你没有Oracle Linux 支持订阅，你可以使用 [Oracle
 Linux
 Forum](https://community.oracle.com/community/server_%26_storage_systems/linux/oracle_linux) 获得社区的帮助.
