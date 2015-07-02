@@ -1,6 +1,6 @@
 # dockerdocs
 
-docker官方文档中文翻译
+docker官方文档中文翻译---当前翻译文档版本号v1.6，官方地址点击[这里](http://beta-docs.docker.io/v1.6/)
 
 ## 目的
 
