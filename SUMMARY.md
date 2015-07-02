@@ -10,8 +10,7 @@
     * [Ubuntu](Installation/ubuntulinux.md)`翻译：王辉 未校译`
     * [Mac OS X](Installation/mac.md)`翻译：黄土高坡 未校译`
     * [Kitematic on Mac OS X](Kitematic/install.md)`翻译：刘红 未校译`
-    * [Microsoft Windows](Installation/windows.md)`预计完成时间2015-07-05`
-    * [Windows下Docker Client测试](Installation/testing-windows-docker-client.md)`预计完成时间2015-07-05`
+    * [Microsoft Windows](Installation/windows.md)`翻译：朱高校 未校译`
     * [Amazon EC2](Installation/amazon.md)`翻译：王辉 未校译`
     * [Arch Linux](Installation/archlinux.md)`翻译：王辉 未校译`
     * [二进制安装](Installation/binaries.md)`翻译：刘红 未校译`
@@ -26,9 +25,9 @@
     * [Joyent Compute Service](Installation/joyent.md)`翻译：刘红 未校译`
     * [Microsoft Azure](Installation/azure.md)`翻译：刘红 未校译`
     * [Rackspace Cloud](Installation/rackspace.md)`翻译：刘红 未校译`
-    * [Red Hat Enterprise Linux](Installation/rhel.md)`预计完成时间2015-07-21`
-    * [Oracle Linux](Installation/oracle.md)`预计完成时间2015-07-21`
-    * [SUSE](Installation/suse.md)`预计完成时间2015-07-21`
+    * [Red Hat Enterprise Linux](Installation/rhel.md)`翻译：王辉 未校译`
+    * [Oracle Linux](Installation/oracle.md)`翻译：朱高校 未校译`
+    * [SUSE](Installation/suse.md)`翻译：朱高校 未校译`
     * [Dcoker Compose](Compose/install/compose.md) `翻译：刘红 未校译`
 * [用户指南](UserGuide/README.md)
     * [欢迎阅读Docker用户指南](UserGuide/userguide.md) `翻译：刘红 未校译`
