@@ -1,155 +1,86 @@
-page_title: Installation on Red Hat Enterprise Linux
-page_description: Instructions for installing Docker on Red Hat Enterprise Linux.
-page_keywords: Docker, Docker documentation, requirements, linux, rhel
-
 # Red Hat Enterprise Linux
 
-Docker is supported on the following versions of RHEL:
+现在Docker已经支持如下两个版本的RHEL：
 
-- [*Red Hat Enterprise Linux 7 (64-bit)*](#red-hat-enterprise-linux-7-installation)
-- [*Red Hat Enterprise Linux 6.6 (64-bit)*](#red-hat-enterprise-linux-66-installation) or later
+1. [*Red Hat Enterprise Linux 7 (64-bit)*](http://beta-docs.docker.io/v1.5/installation/rhel/#red-hat-enterprise-linux-7-installation)
+2. [*Red Hat Enterprise Linux 6.5 (64-bit)*](http://beta-docs.docker.io/v1.5/installation/rhel/#red-hat-enterprise-linux-6.5-installation)或以上版本
 
-## Kernel support
+### 关于内核
 
-RHEL will only support Docker via the *extras* channel or EPEL package when
-running on kernels shipped by the distribution. There are kernel changes which
-will cause issues if one decides to step outside that box and run
-non-distribution kernel packages.
+当在分布式的内核上运行时，RHEL将只支持通过额外的channel或EPEL包来运行Docker，如果你不这样使用的话会因内核的变化而导致一些问题出现。
 
-## Red Hat Enterprise Linux 7
+## 在Red Hat Enterprise Linux 7上安装Docker
 
-### Installation
+***Red Hat Enterprise Linux 7 (64 bit)***已经[附带了Docker](https://access.redhat.com/site/products/red-hat-enterprise-linux/docker-and-containers)，你可以在[版本说明](https://access.redhat.com/site/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.0_Release_Notes/chap-Red_Hat_Enterprise_Linux-7.0_Release_Notes-Linux_Containers_with_Docker_Format.html)上找到概述及一些用户指南。
 
-**Red Hat Enterprise Linux 7 (64 bit)** has [shipped with
-Docker](https://access.redhat.com/site/products/red-hat-enterprise-linux/docker-and-containers).
-An overview and some guidance can be found in the [Release
-Notes](https://access.redhat.com/site/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.0_Release_Notes/chap-Red_Hat_Enterprise_Linux-7.0_Release_Notes-Linux_Containers_with_Docker_Format.html).
+Docker位于***extras***channel
 
-Docker is located in the *extras* channel. To install Docker:
 
-1. Enable the *extras* channel:
+- 启用***extras***channel
+```
+$ sudo subscription-manager repos --enable=rhel-7-server-eatras-rpms
+```
+- 安装
+```
+$ sudo yum install docker
+```
 
-        $ sudo subscription-manager repos --enable=rhel-7-server-extras-rpms
+> 另外的安装，配置及用户使用方法包括[如何在Red Hat Enterprise Linux 7上使用容器](https://access.redhat.com/site/articles/881893)，都可以在[Red Hat Customer Portal](https://access.redhat.com/)上找到。
 
-2. Install Docker:
+## 在Red Hat Enterprise Linux 6.5上安装Docker
 
-        $ sudo yum install docker 
+64位RHEL 6.5或以上版本，需要内核在2.6.32-431或更高才能支持Docker。
+EPEL源上的**RHEL6.5**可以使用Docker，当然这个包只是[Extra Packages for Enterprise Linux (EPEL)](https://fedoraproject.org/wiki/EPEL)的一部分。
 
-Additional installation, configuration, and usage information,
-including a [Get Started with Docker Containers in Red Hat
-Enterprise Linux 7](https://access.redhat.com/site/articles/881893)
-guide, can be found by Red Hat customers on the [Red Hat Customer
-Portal](https://access.redhat.com/).
+### 内核部分
 
-Please continue with the [Starting the Docker daemon](#starting-the-docker-daemon).
+当在分布式的内核上运行时，RHEL将只支持通过额外的channel或EPEL包来运行Docker，如果你不这样使用的话会因内核的变化而导致一些问题出现。
 
-### Uninstallation
+>注意：请执行```yum update```命令来保证你的系统是最新的，这样可以确保关键的安全漏洞和一些致命错误(如那些在 2.6.32 内核中的问题)得到改善。
 
-To uninstall the Docker package:
+### 安装
 
-    $ sudo yum -y remove docker
+首先需要安装EPEL包，可以参考：[EPEL安装方法](https://fedoraproject.org/wiki/EPEL#How_can_I_use_these_extra_packages.3F)。
+因为与系统托盘中的应用和其可执行文件包名称冲突，所以 Docker RPM 叫```docker-io```
 
-The above command will not remove images, containers, volumes, or user created
-configuration files on your host. If you wish to delete all images, containers,
-and volumes run the following command:
+要安装```docker-io```，你必须先删除```docker```包
+```
+$ sudo yum -y remove docker
+```
 
-    $ rm -rf /var/lib/docker
+接下来，安装```docker-io```
+```
+$ sudo yum install docker-io
+```
 
-You must delete the user created configuration files manually.
+如下命令可以更新```docker-io```
+```
+$ sudo yum -y update docker-io
+```
 
-## Red Hat Enterprise Linux 6.6
+## 启动Docker守护进程
 
-You will need **64 bit** [RHEL
-6.6](https://access.redhat.com/site/articles/3078#RHEL6) or later, with
-a RHEL 6 kernel version 2.6.32-504.16.2 or higher as this has specific kernel
-fixes to allow Docker to work. Related issues: [#9856](https://github.com/docker/docker/issues/9856).
+安装后，我们可以启动Docker守护进程了：
+```
+$ sudo service docker start
+```
 
-Docker is available for **RHEL6.6** on EPEL. Please note that
-this package is part of [Extra Packages for Enterprise Linux
-(EPEL)](https://fedoraproject.org/wiki/EPEL), a community effort to
-create and maintain additional packages for the RHEL distribution.
+开机自启Docker服务：
+```
+$ sudo chkconfig docker on
+```
 
-### Kernel support
+检查Docker服务是否在运行：
+```
+$ sudo docker run -i -t fedora /bin/bash
+```
 
-RHEL will only support Docker via the *extras* channel or EPEL package when
-running on kernels shipped by the distribution. There are things like namespace
-changes which will cause issues if one decides to step outside that box and run
-non-distro kernel packages.
+> 注意：如果遇到```Cannot start container```这样的错误，是和 SELinux或权限有关，你需要更新SELinux策略，你可以执行```sudo yum upgrade selinux-policy```命令并重启主机
 
-> **Warning**:
-> Please keep your system up to date using `yum update` and rebooting
-> your system. Keeping your system updated ensures critical security
->  vulnerabilities and severe bugs (such as those found in kernel 2.6.32)
-> are fixed.
+## 守护进程(daemon)的一些设置
 
-###  Installation
+如果需要一个http的代理，可以在docker运行时指定不同的目录或分区或一些其它的自定义，请查看 [customize your systemd Docker daemon options](https://docs.docker.com/articles/systemd/)
 
-Firstly, you need to install the EPEL repository. Please follow the
-[EPEL installation
-instructions](https://fedoraproject.org/wiki/EPEL#How_can_I_use_these_extra_packages.3F).
+##有问题？
 
-There is a package name conflict with a system tray application
-and its executable, so the Docker RPM package was called `docker-io`.
-
-To proceed with `docker-io` installation, you may need to remove the
-`docker` package first.
-
-    $ sudo yum -y remove docker
-
-Next, let's install the `docker-io` package which will install Docker on our host.
-
-    $ sudo yum install docker-io
-
-To update the `docker-io` package
-
-    $ sudo yum -y update docker-io
-
-Please continue with the [Starting the Docker daemon](#starting-the-docker-daemon).
-
-### Uninstallation
-
-To uninstall the Docker package:
-
-    $ sudo yum -y remove docker-io
-
-The above command will not remove images, containers, volumes, or user created
-configuration files on your host. If you wish to delete all images, containers,
-and volumes run the following command:
-
-    $ rm -rf /var/lib/docker
-
-You must delete the user created configuration files manually.
-
-## Starting the Docker daemon
-
-Now that it's installed, let's start the Docker daemon.
-
-    $ sudo service docker start
-
-If we want Docker to start at boot, we should also:
-
-    $ sudo chkconfig docker on
-
-Now let's verify that Docker is working.
-
-    $ sudo docker run -i -t fedora /bin/bash
-
-> Note: If you get a `Cannot start container` error mentioning SELinux
-> or permission denied, you may need to update the SELinux policies.
-> This can be done using `sudo yum upgrade selinux-policy` and then rebooting.
-
-**Done!**
-
-Continue with the [User Guide](/userguide/).
-
-## Custom daemon options
-
-If you need to add an HTTP Proxy, set a different directory or partition for the
-Docker runtime files, or make other customizations, read our Systemd article to
-learn how to [customize your Systemd Docker daemon options](/articles/systemd/).
-
-## Issues?
-
-If you have any issues - please report them directly in the
-[Red Hat Bugzilla for docker-io component](
-https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora%20EPEL&component=docker-io).
+如果你有任何关于Docker的问题，请在[Red Hat Bugzilla for docker-io component](https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora%20EPEL&component=docker-io)上面告诉我们。
