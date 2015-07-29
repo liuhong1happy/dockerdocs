@@ -74,7 +74,7 @@ Docker Hub仓库让你和同事、顾客以及docker大社区分享镜像成为�
         "status": "Active"
     }
 
-测试，你可以试着像一个HTTP请求的工具requestb.in。
+测试，你可以试着向一个HTTP请求的工具requestb.in。
 
 注：docker服务器当前的IP范围162.242.195.64 - 162.242.195.127，所以你可以限制webhooks接受那套IP地址webhook的请求。
 
