@@ -44,7 +44,7 @@
 	    * [扩展Compose服务](Compose/extends.md)`翻译：刘红 未校译`
     * [Docker Machine用户指南](UserGuide/dockermachine.md) `翻译：刘红 未校译`
     * [Docker Swarm用户指南](UserGuide/dockerswarm.md) `翻译：刘红 未校译`
-    * [Kitematic用户指南](Kitematic/userguide.md)`预计完成时间2015-07-05`
+    * [Kitematic用户指南](Kitematic/userguide.md)`翻译：孙伟 未校译`
 * [Docker Hub](DockerHub/README.md)
 	* [Docker Hub](DockerHub/docker-hub.md)`翻译：刘红 未校译`
 	* [账户](DockerHub/accounts.md)`翻译：刘红 未校译`
