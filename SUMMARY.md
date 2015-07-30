@@ -49,7 +49,7 @@
 	* [Docker Hub](DockerHub/docker-hub.md)`翻译：刘红 未校译`
 	* [账户](DockerHub/accounts.md)`翻译：刘红 未校译`
 	* [用户指南](DockerHub/userguide.md)`翻译：刘红 未校译`
-	* [私有库](DockerHub/repos.md)`预计完成时间2015-06-14`
+	* [私有库](DockerHub/repos.md)`翻译：孙伟 未校译`
 	* [自动构建](DockerHub/builds.md)`预计完成时间2015-06-14`
 	* [官方库](DockerHub/official_repos.md)`预计完成时间2015-06-14`
 * [企业版 Docker Hub](DockerHubEnterprise/README.md) 
