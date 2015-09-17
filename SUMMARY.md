@@ -50,8 +50,8 @@
 	* [账户](DockerHub/accounts.md)`翻译：刘红 未校译`
 	* [用户指南](DockerHub/userguide.md)`翻译：刘红 未校译`
 	* [私有库](DockerHub/repos.md)`翻译：孙伟 未校译`
-	* [自动构建](DockerHub/builds.md)`预计完成时间2015-06-14`
-	* [官方库](DockerHub/official_repos.md)`预计完成时间2015-06-14`
+	* [自动构建](DockerHub/builds.md)`预计完成时间2015-10-14`
+	* [官方库](DockerHub/official_repos.md)`预计完成时间2015-10-14`
 * [企业版 Docker Hub](DockerHubEnterprise/README.md) 
 	* [概述](DockerHubEnterprise/docker-hub-enterprise.md)  `翻译：刘红 未校译`
 	* [快速开始：基本流程](DockerHubEnterprise/quick-start.md)  `翻译：刘红 未校译`
@@ -84,8 +84,8 @@
 	* [启用本地私有镜像服务](Articles/registry_mirror.md) `翻译：刘红 未校译`
 	* [自动启动容器](Articles/host_integration.md) `翻译：刘红 未校译`
 	* [创建一个基本镜像](Articles/baseimages.md) `翻译：刘红 未校译`
-	* [Dockerfile最佳实践](Articles/dockerfile_best-practices.md)`预计完成时间2015-06-14`
-	* [使用镜像库客户端认证证书](Articles/certificates.md)`预计完成时间2015-06-14`
+	* [Dockerfile最佳实践](Articles/dockerfile_best-practices.md)`预计完成时间2015-10-14`
+	* [使用镜像库客户端认证证书](Articles/certificates.md)`预计完成时间2015-10-14`
 	* [Docker化Supervisor服务](Articles/using_supervisor.md) `翻译：刘红 未校译`
 	* [配置Docker](Articles/configuring.md) `翻译：刘红 未校译`
 	* [使用CFEngine配置管理](Articles/cfengine_process_management.md) `翻译：刘红 未校译`
@@ -100,10 +100,10 @@
 	* [Docker命令行(一)](Reference/commandline/cli-1.md)`翻译：刘红 未校译`
 	* [Docker命令行(二)](Reference/commandline/cli-2.md)`翻译：刘红 未校译`
 	* [Docker命令行(三)](Reference/commandline/cli-3.md)`翻译：刘红 未校译`
-	* [Docker命令行(四)](Reference/commandline/cli-4.md)`预计完成时间2015-06-14`
+	* [Docker命令行(四)](Reference/commandline/cli-4.md)`预计完成时间2015-10-14`
 	* [Docker命令行(五)](Reference/commandline/cli-5.md)`翻译：刘红 未校译`
-	* [Dockerfile](Reference/commandline/cli.md)`预计完成时间2015-06-28`
-	* [问与答-FAQ](Reference/commandline/cli.md)`预计完成时间2015-06-28`
+	* [Dockerfile](Reference/commandline/cli.md)`预计完成时间2015-09-28`
+	* [问与答-FAQ](Reference/commandline/cli.md)`预计完成时间2015-09-28`
 	* [Run命令参考](Reference/run.md)`翻译：罗玉林 未校译`
 	* [Compose命令行](Compose/cli.md)`翻译：罗玉林 未校译`
 	* [Compose yml](Compose/yml.md)`翻译：罗玉林 未校译`
@@ -113,8 +113,8 @@
 	* [Swarm策略](Swarm/strategy.md)`翻译：罗玉林 未校译`
 	* [Swarm filters](Swarm/filter.md)`翻译：罗玉林 未校译`
 	* [Swarm API](Swarm/API.md)`翻译：罗玉林 未校译`
-	* [Docker Registry 2.0](Reference/registry/README.md)`预计完成时间2015-09-28`
-		* [部署一个私有镜像库](Reference/commandline/cli.md)`预计完成时间2015-09-28`
+	* [Docker Registry 2.0](Registry/README.md)`预计完成时间2015-09-28`
+		* [部署一个私有镜像库](Registry/deploying.md)`预计完成时间2015-09-28`
 		* [配置私有镜像库](Reference/commandline/cli.md)`预计完成时间2015-09-28`
 		* [存储驱动模块](Reference/commandline/cli.md)`预计完成时间2015-09-28`
 		* [了解notifications](Reference/commandline/cli.md)`预计完成时间2015-09-28`
@@ -122,17 +122,17 @@
 		* [JSON格式](Reference/commandline/cli.md)`预计完成时间2015-09-28`
 		* [中心服务验证](Reference/commandline/cli.md)`预计完成时间2015-09-28`
 	* [Docker Hub and Registry 1.0](Reference/commandline/cli.md)
-		* [Docker Registry API v1](Reference/commandline/cli.md)`预计完成时间2015-06-28`
-		* [Docker Registry 1.0 API Client Libraries](Reference/commandline/cli.md)`预计完成时间2015-06-28`
-	* [Docker Hub API](Reference/commandline/cli.md)`预计完成时间2015-06-21`
+		* [Docker Registry API v1](Reference/commandline/cli.md)`预计完成时间2015-09-28`
+		* [Docker Registry 1.0 API Client Libraries](Reference/commandline/cli.md)`预计完成时间2015-09-28`
+	* [Docker Hub API](Reference/commandline/cli.md)`预计完成时间2015-10-21`
 	* [Docker Remote API](Reference/api/docker_remote_api.md)`翻译：刘红 未校译`
-	* [Docker Remote API v1.18](Reference/commandline/cli.md)`预计完成时间2015-06-21`
-	* [Docker Remote API v1.17](Reference/commandline/cli.md)`预计完成时间2015-06-21`
-	* [Docker Remote API v1.16](Reference/commandline/cli.md)`预计完成时间2015-06-21`
-	* [Docker Remote API Client Libraries](Reference/commandline/cli.md)`预计完成时间2015-06-21`
+	* [Docker Remote API v1.18](Reference/commandline/cli.md)`预计完成时间2015-10-21`
+	* [Docker Remote API v1.17](Reference/commandline/cli.md)`预计完成时间2015-10-21`
+	* [Docker Remote API v1.16](Reference/commandline/cli.md)`预计完成时间2015-10-21`
+	* [Docker Remote API Client Libraries](Reference/commandline/cli.md)`预计完成时间2015-10-21`
 	* [Docker Hub Accounts API](Reference/api/docker_io_accounts_api.md)`翻译：刘红 未校译`
-	* [Kitematic问与答](Kitematic/faq.md)`预计完成时间2015-06-21`
-	* [Kitematic常见问题](Kitematic/known-issues.md)`预计完成时间2015-06-21`
+	* [Kitematic问与答](Kitematic/faq.md)`预计完成时间2015-10-21`
+	* [Kitematic常见问题](Kitematic/known-issues.md)`预计完成时间2015-10-21`
 * [贡献](Project/README.md)
 	* [首先了解README](Project/who-written-for.md)`翻译：王辉 未校译`
 	* [在Linux或者OS X上获取必要软件](Project/software-required.md)`翻译：王辉 未校译`
