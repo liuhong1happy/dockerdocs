@@ -113,14 +113,14 @@
 	* [Swarm策略](Swarm/strategy.md)`翻译：罗玉林 未校译`
 	* [Swarm filters](Swarm/filter.md)`翻译：罗玉林 未校译`
 	* [Swarm API](Swarm/API.md)`翻译：罗玉林 未校译`
-	* [Docker Registry 2.0](Reference/commandline/cli.md)
-		* [部署一个私有镜像库](Reference/commandline/cli.md)`预计完成时间2015-06-28`
-		* [配置私有镜像库](Reference/commandline/cli.md)`预计完成时间2015-06-28`
-		* [存储驱动模块](Reference/commandline/cli.md)`预计完成时间2015-06-28`
-		* [了解notifications](Reference/commandline/cli.md)`预计完成时间2015-06-28`
-		* [Registry Service API v2](Reference/commandline/cli.md)`预计完成时间2015-06-28`
-		* [JSON格式](Reference/commandline/cli.md)`预计完成时间2015-06-28`
-		* [中心服务验证](Reference/commandline/cli.md)`预计完成时间2015-06-28`
+	* [Docker Registry 2.0](Reference/registry/README.md)`预计完成时间2015-09-28`
+		* [部署一个私有镜像库](Reference/commandline/cli.md)`预计完成时间2015-09-28`
+		* [配置私有镜像库](Reference/commandline/cli.md)`预计完成时间2015-09-28`
+		* [存储驱动模块](Reference/commandline/cli.md)`预计完成时间2015-09-28`
+		* [了解notifications](Reference/commandline/cli.md)`预计完成时间2015-09-28`
+		* [Registry Service API v2](Reference/commandline/cli.md)`预计完成时间2015-09-28`
+		* [JSON格式](Reference/commandline/cli.md)`预计完成时间2015-09-28`
+		* [中心服务验证](Reference/commandline/cli.md)`预计完成时间2015-09-28`
 	* [Docker Hub and Registry 1.0](Reference/commandline/cli.md)
 		* [Docker Registry API v1](Reference/commandline/cli.md)`预计完成时间2015-06-28`
 		* [Docker Registry 1.0 API Client Libraries](Reference/commandline/cli.md)`预计完成时间2015-06-28`
